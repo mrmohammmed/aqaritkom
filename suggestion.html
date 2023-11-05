@@ -1,0 +1,232 @@
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--custom fremeworks -->
+  <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="css/hover.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <title>suggestion</title>
+</head>
+
+<body>
+  <!--start of top-header -->
+  <header>
+    <!--start of top-header -->
+    <div class="top-header">
+      <p>المنصة الحصرية للعقارات في المملكة</p>
+    </div>
+    <!--end of top-header -->
+    <!--start of navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="images/logo.png" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#navbarSupportedContent">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="offcanvas offcanvas-top" id="navbarSupportedContent">
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">
+                الرئيسيه
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">الشركات العقارية</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span>جديد</span>
+                منصة المزادات
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">المؤشرات العقارية</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">المساعدة</a>
+            </li>
+          </ul>
+          <div class="actions">
+            <ul class="d-flex">
+              <li class="add">
+                <a href="#" class="link-style-small">
+                  <span>
+                    <i class="fa-solid fa-house-chimney"></i>
+                    إضافة عقار
+                  </span>
+                </a>
+              </li>
+              <li class="login">
+                <a href="#" class="link-style-small">
+                  <span>
+                    <i class="fa-regular fa-user"></i>
+                    تسجيل الدخول
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--end of navbar -->
+  </header>
+  <!-- end of top-header -->
+
+<section class="breadcramp">
+    <div class="container">
+        <ul class="d-flex">
+            <li>
+                <a href="#">الرئسية</a>
+            </li>
+            <span>></span>
+            &nbsp;
+            <li>الشكاوي والمقترحات</li>
+        </ul>
+    </div>
+</section>
+
+<section class="suggestion">
+    <div class="container">
+        <form method="" action="" id="myForm" onsubmit="return validateForm();">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="first">
+                        <label for="name">الإسم بالكامل</label>
+                        <input id="name" class="form-control" type="text" placeholder="اكتب هنا الإسم الكامل">
+                        <span id="name-error" class="error">يرجى إدخال الاسم الكامل</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="first">
+                        <label for="phone">رقم الجوال</label>
+                        <input type="tel"class="form-control" id="phone" placeholder="ادخل رقم جوالك هنا">
+                        <p class="country">
+                            <img src="images/rectangle-flag.png" style="width:47px; height: 30px;">
+                            (+966)
+                          </p>
+                          <span id="phone-error" class="error">يرجى إدخال رقم الجوال</span>
+                    </div>
+                </div>
+                 <div class="col-md-12">
+                    <div class="first">
+                        <label for="details">التفاصيل</label>
+                        <textarea id="details" class="form-control" rows="9"></textarea>
+                    </div>
+                </div>
+                <input type="submit" value="ارسال">
+            </div>
+        </form>
+    </div>
+</section>
+
+<script>
+    function validateForm() {
+        var nameInput = document.getElementById('name');
+        var phoneInput = document.getElementById('phone');
+        var nameError = document.getElementById('name-error');
+        var phoneError = document.getElementById('phone-error');
+
+        // Reset styles
+        nameInput.classList.remove('invalid');
+        phoneInput.classList.remove('invalid');
+        nameError.style.display = 'none';
+        phoneError.style.display = 'none';
+
+        // Validate name field
+        if (nameInput.value.trim() === '') {
+            nameInput.classList.add('invalid');
+            nameError.style.display = 'block';
+            nameInput.focus();
+            return false;
+        }
+
+        // Validate phone field
+        if (phoneInput.value.trim() === '') {
+            phoneInput.classList.add('invalid');
+            phoneError.style.display = 'block';
+            phoneInput.focus();
+            return false;
+        }
+
+        // Form is valid, submit it
+        return true;
+    }
+</script>
+    <!--start of footer -->
+    <footer>
+        <!--start of top-footer -->
+        <div class="top-footer">
+          <div class="container">
+            <div class="parent d-flex">
+              <div class="social">
+                <ul class="d-flex">
+                  <li>
+                    <a href="#">
+                      <i class="fa-brands fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="pages">
+                <ul class="d-flex">
+                  <li>
+                    <a href="#">شروط الإعلان علي الموقع</a>
+                  </li>
+                  <li>
+                    <a href="#">سياسية الخصوصية</a>
+                  </li>
+                  <li>
+                    <a href="#">شروط واحكام المزادات</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of top-footer -->
+        <!--start of bottom-footer -->
+        <div class="bottom-footer">
+          <h2>جميع الحقوق محفوظة لعقارتكم @2022</h2>
+        </div>
+      </footer>
+      <!-- end of bottom-footer -->
+      <!-- end of footer -->
+
+ 
+
+
+
+    <!--framework js -->
+  
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    </body>
+    
+    </html>
