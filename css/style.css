@@ -4140,3 +4140,139 @@ a:hover {
   color: #fff;
   font-size: 20px;
 }
+
+.estate-finance {
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+
+.estate-finance input,
+.estate-finance .select2-container .select2-selection--single {
+  border: 0.5px solid #D3D1D1;
+  border-radius: 8px;
+  height: 60px;
+}
+
+.estate-finance label {
+  padding-bottom: 15px;
+}
+
+.estate-finance .first {
+  margin-bottom: 15px;
+}
+
+.estate-finance button {
+  margin: auto;
+  margin-top: 50px;
+  width: 350px;
+  background-color: var(--primary-color);
+  color: #fff;
+
+}
+
+.estate-finance button:hover {
+  color: var(--primary-color);
+}
+
+.estate-finance button:before,
+.estate-finance button:after {
+
+  background-color: #fff;
+
+}
+
+.estate-finance .error-message {
+
+  color: red;
+}
+
+input[type='email'] {
+  direction: rtl;
+}
+
+.select2-hidden-accessible {
+  display: none;
+}
+
+.company-profile .barcodeDown {
+  border-radius: 31px;
+  min-width: 336px;
+  height: 470px;
+  padding: 30px;
+}
+
+.company-profile .barcodeDown li {
+  width: 100%;
+  background-color: transparent !important;
+  border: 0px !important;
+}
+
+.company-profile .barcodeDown .barcodeLinks {
+  margin-top: 30px;
+}
+
+.company-profile .barcodeDown .barcodeLinks li {
+  margin-bottom: 20px;
+  box-shadow: 0px 3px 6px #00000066;
+  border-radius: 10px;
+}
+
+.company-profile .barcodeDown .barcodeLinks li a {
+  padding-right: 15px;
+  color: #000;
+}
+
+.company-profile .barcodeDown .photo {
+  width: 100%;
+  box-shadow: 0px 3px 10px #47468242;
+  border-radius: 12px;
+  height: 250px;
+  position: relative;
+}
+
+.company-profile .barcodeDown .photo img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.company-profile .barcode .dropdown-toggle::after {
+  border: 0px;
+}
+
+.marketer-profile {
+  background-color: #fff;
+}
+
+.marketer-profile .parent {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 36px;
+  padding: 50px 0px;
+}
+
+.marketer-profile .parent .name img {
+  border-radius: 50%;
+  display: table;
+  margin: auto;
+}
+
+.marketer-profile .parent .name h2 {
+  font-size: 22px;
+  color: #000;
+}
+
+.marketer-profile .parent .info {
+  margin-right: 50px;
+}
+
+.marketer-profile .parent .info .links-contact li {
+  margin-left: 30px;
+}
+
+.marketer-profile .parent .info .addresses li {
+  border: 0px;
+  margin-left: 30px;
+}

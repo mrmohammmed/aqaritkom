@@ -1,9 +1,6 @@
 
 
 
-
-
-
 const loadMazadCarousel = () => {
     $(".mzadSingle").owlCarousel({
         autoplay: false,
@@ -159,6 +156,24 @@ $(document).ready(function () {
     $("#search").select2({
         placeholder: "كل المملكة",
     });
+    $("#theAge").select2({
+        placeholder: "الرجاء اختيار العمر",
+    });
+    $("#theGender").select2({
+        placeholder: "الرجاء اختيار الجنس",
+    });
+    $("#theSector").select2({
+        placeholder: "الرجاء اختيار نوع القطاع",
+    });
+    $("#theBank").select2({
+        placeholder: "الرجاء اختيار البنك",
+    });
+    $("#theSalary").select2({
+        placeholder: "الرجاء اختيار الراتب الشهري",
+    });
+    $("#theArea").select2({
+        placeholder: "الرجاء اختيار المنطقة",
+    });
 
     $(window).on("scroll", function () {
         if ($(window).scrollTop() >= 95 && !$("#nav").hasClass("fixed")) {
@@ -298,8 +313,8 @@ $(function () {
                 i = $(s).siblings(".file-upload-text");
             o
                 ? ((o = o.replace(/^C:\\fakepath\\/, "")),
-                  $(i).val(o),
-                  e.showPreview(s, o, i))
+                    $(i).val(o),
+                    e.showPreview(s, o, i))
                 : $(i).val("");
         },
         showPreview: function (e, s, o) {
@@ -308,13 +323,13 @@ $(function () {
                 var t = new FileReader();
                 (t.onload = function (i) {
                     var t = $(e)
-                            .parents(".file-upload-wrapper")
-                            .siblings(".preview"),
+                        .parents(".file-upload-wrapper")
+                        .siblings(".preview"),
                         n = $(t).find("img");
                     0 === n.length
                         ? $(t).html(
-                              '<img src="' + i.target.result + '" alt=""/>'
-                          )
+                            '<img src="' + i.target.result + '" alt=""/>'
+                        )
                         : n.attr("src", i.target.result),
                         o.val(s),
                         $.each($(".img-wrapper img"), function (e, s) {
