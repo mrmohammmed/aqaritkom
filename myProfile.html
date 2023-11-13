@@ -165,15 +165,16 @@
                         aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
-                                <div class="modal-header modal-header-marketing">
+                                <div class="modal-header modal-header-marketing header-certified">
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                                         <i class="fa-solid fa-xmark"></i>
                                     </button>
+                                    <h2 class="text-center">توثيق الحساب</h2>
                                 </div>
-                                <div class="modal-body modal-marcketing text-center">
-                                    <img src="images/Layer_x0020_1.svg">
-                                    <h2>عذرا</h2>
-                                    <p>هذه الخدمة متاحة للمسوقين العقارين والشركات العقارية</p>
+                                <div class="modal-body modal-marcketing modal-cerified text-center">
+                                    <p>الرجاء ادخال رقم الهوية</p>
+                                    <input type="number" placeholder="12xxxxxxxx" class="form-control">
+                                    <button type="submit">توثيق</button>
                                 </div>
                             </div>
                         </div>
@@ -258,62 +259,48 @@
                                     <button class="nav-link active" id="pills-review-tab" data-bs-toggle="pill"
                                         data-bs-target="#pills-review" type="button" role="tab"
                                         aria-controls="pills-review" aria-selected="true">
-                                        قيد المراجعة
+                                        الإعلانات المفعلة
                                     </button>
                                 </li>
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link" id="pills-accept-tab" data-bs-toggle="pill"
                                         data-bs-target="#pills-accept" type="button" role="tab"
                                         aria-controls="pills-accept" aria-selected="false">
-                                        المقبولة
+                                        الاعلانات الغير مفعله
                                     </button>
                                 </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-refused-tab" data-bs-toggle="pill"
-                                        data-bs-target="#pills-refused" type="button" role="tab"
-                                        aria-controls="pills-refused" aria-selected="false">
-                                        المرفوضه
-                                    </button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-closed-tab" data-bs-toggle="pill"
-                                        data-bs-target="#pills-closed" type="button" role="tab"
-                                        aria-controls="pills-closed" aria-selected="false">
-                                        المغلقة
-                                    </button>
-                                </li>
+
                             </ul>
                             <div class="tab-content" id="pills-tabContent">
                                 <div class="tab-pane fade show active" id="pills-review" role="tabpanel"
                                     aria-labelledby="pills-review-tab">
-                                    <div class="ads-filter">
+                                    <div class="featured-aqars">
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <div class="all">
-                                                    <div class="dropdown">
-                                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                                                            role="button" data-bs-toggle="dropdown"
-                                                            aria-expanded="false">
-                                                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                        </a>
-                                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                            <li><a class="dropdown-item" href="#">تعديل الاعلان</a></li>
-                                                            <li><a class="dropdown-item" href="#">حذف الاعلان</a></li>
-                                                            <li>
-                                                                <a class="dropdown-item" href="#">مشاركة الاعلان</a>
-                                                            </li>
-                                                            <li>
-                                                                <a class="dropdown-item" href="#">إلغاء تنشيط
-                                                                    الإعلان</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
+                                                <div class="feat">
+
                                                     <div class="parent d-flex">
-                                                        <figure class="photo">
+
+                                                        <div class="photo">
                                                             <a href="#">
                                                                 <img src="images/modern-living-room-style.png">
                                                             </a>
-                                                        </figure>
+                                                            <div class="d-flex">
+                                                                <div class="verify">
+                                                                    <span>نشط</span>
+                                                                </div>
+                                                                <div class="verify">
+                                                                    <span>مرخص</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="ad-feat">
+                                                                <a href="#">
+                                                                    <img src="images/medal.svg">
+                                                                    تميز الإعلان
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
                                                         <div class="info">
                                                             <p class="title">
                                                                 <a href="#">
@@ -347,39 +334,42 @@
                                                                         <p>350 الف ريال</p>
                                                                     </div>
                                                                 </div>
+                                                                <div class="col-md-12">
+                                                                    <div class="more">
+                                                                        <a href="#">المزيد</a>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <button>تحديث</button>
                                                 </div>
 
                                             </div>
                                             <div class="col-md-6">
-                                                <div class="all">
-                                                    <div class="dropdown">
-                                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                                                            role="button" data-bs-toggle="dropdown"
-                                                            aria-expanded="false">
-                                                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                        </a>
-                                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                            <li><a class="dropdown-item" href="#">تعديل الاعلان</a></li>
-                                                            <li><a class="dropdown-item" href="#">حذف الاعلان</a></li>
-                                                            <li>
-                                                                <a class="dropdown-item" href="#">مشاركة الاعلان</a>
-                                                            </li>
-                                                            <li>
-                                                                <a class="dropdown-item" href="#">إلغاء تنشيط
-                                                                    الإعلان</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
+                                                <div class="feat">
+
                                                     <div class="parent d-flex">
-                                                        <figure class="photo">
+
+                                                        <div class="photo">
                                                             <a href="#">
                                                                 <img src="images/modern-living-room-style.png">
                                                             </a>
-                                                        </figure>
+                                                            <div class="d-flex">
+                                                                <div class="verify">
+                                                                    <span>نشط</span>
+                                                                </div>
+                                                                <div class="verify">
+                                                                    <span>مرخص</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="ad-feat">
+                                                                <a href="#">
+                                                                    <img src="images/medal.svg">
+                                                                    تميز الإعلان
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
                                                         <div class="info">
                                                             <p class="title">
                                                                 <a href="#">
@@ -413,39 +403,42 @@
                                                                         <p>350 الف ريال</p>
                                                                     </div>
                                                                 </div>
+                                                                <div class="col-md-12">
+                                                                    <div class="more">
+                                                                        <a href="#">المزيد</a>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <button>تحديث</button>
                                                 </div>
 
                                             </div>
                                             <div class="col-md-6">
-                                                <div class="all">
-                                                    <div class="dropdown">
-                                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                                                            role="button" data-bs-toggle="dropdown"
-                                                            aria-expanded="false">
-                                                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                        </a>
-                                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                            <li><a class="dropdown-item" href="#">تعديل الاعلان</a></li>
-                                                            <li><a class="dropdown-item" href="#">حذف الاعلان</a></li>
-                                                            <li>
-                                                                <a class="dropdown-item" href="#">مشاركة الاعلان</a>
-                                                            </li>
-                                                            <li>
-                                                                <a class="dropdown-item" href="#">إلغاء تنشيط
-                                                                    الإعلان</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
+                                                <div class="feat">
+
                                                     <div class="parent d-flex">
-                                                        <figure class="photo">
+
+                                                        <div class="photo">
                                                             <a href="#">
                                                                 <img src="images/modern-living-room-style.png">
                                                             </a>
-                                                        </figure>
+                                                            <div class="d-flex">
+                                                                <div class="verify">
+                                                                    <span>نشط</span>
+                                                                </div>
+                                                                <div class="verify">
+                                                                    <span>مرخص</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="ad-feat">
+                                                                <a href="#">
+                                                                    <img src="images/medal.svg">
+                                                                    تميز الإعلان
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
                                                         <div class="info">
                                                             <p class="title">
                                                                 <a href="#">
@@ -479,39 +472,42 @@
                                                                         <p>350 الف ريال</p>
                                                                     </div>
                                                                 </div>
+                                                                <div class="col-md-12">
+                                                                    <div class="more">
+                                                                        <a href="#">المزيد</a>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <button>تحديث</button>
                                                 </div>
 
                                             </div>
                                             <div class="col-md-6">
-                                                <div class="all">
-                                                    <div class="dropdown">
-                                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                                                            role="button" data-bs-toggle="dropdown"
-                                                            aria-expanded="false">
-                                                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                        </a>
-                                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                            <li><a class="dropdown-item" href="#">تعديل الاعلان</a></li>
-                                                            <li><a class="dropdown-item" href="#">حذف الاعلان</a></li>
-                                                            <li>
-                                                                <a class="dropdown-item" href="#">مشاركة الاعلان</a>
-                                                            </li>
-                                                            <li>
-                                                                <a class="dropdown-item" href="#">إلغاء تنشيط
-                                                                    الإعلان</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
+                                                <div class="feat">
+
                                                     <div class="parent d-flex">
-                                                        <figure class="photo">
+
+                                                        <div class="photo">
                                                             <a href="#">
                                                                 <img src="images/modern-living-room-style.png">
                                                             </a>
-                                                        </figure>
+                                                            <div class="d-flex">
+                                                                <div class="verify">
+                                                                    <span>نشط</span>
+                                                                </div>
+                                                                <div class="verify">
+                                                                    <span>مرخص</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="ad-feat">
+                                                                <a href="#">
+                                                                    <img src="images/medal.svg">
+                                                                    تميز الإعلان
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
                                                         <div class="info">
                                                             <p class="title">
                                                                 <a href="#">
@@ -545,39 +541,42 @@
                                                                         <p>350 الف ريال</p>
                                                                     </div>
                                                                 </div>
+                                                                <div class="col-md-12">
+                                                                    <div class="more">
+                                                                        <a href="#">المزيد</a>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <button>تحديث</button>
                                                 </div>
 
                                             </div>
                                             <div class="col-md-6">
-                                                <div class="all">
-                                                    <div class="dropdown">
-                                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                                                            role="button" data-bs-toggle="dropdown"
-                                                            aria-expanded="false">
-                                                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                        </a>
-                                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                            <li><a class="dropdown-item" href="#">تعديل الاعلان</a></li>
-                                                            <li><a class="dropdown-item" href="#">حذف الاعلان</a></li>
-                                                            <li>
-                                                                <a class="dropdown-item" href="#">مشاركة الاعلان</a>
-                                                            </li>
-                                                            <li>
-                                                                <a class="dropdown-item" href="#">إلغاء تنشيط
-                                                                    الإعلان</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
+                                                <div class="feat">
+
                                                     <div class="parent d-flex">
-                                                        <figure class="photo">
+
+                                                        <div class="photo">
                                                             <a href="#">
                                                                 <img src="images/modern-living-room-style.png">
                                                             </a>
-                                                        </figure>
+                                                            <div class="d-flex">
+                                                                <div class="verify">
+                                                                    <span>نشط</span>
+                                                                </div>
+                                                                <div class="verify">
+                                                                    <span>مرخص</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="ad-feat">
+                                                                <a href="#">
+                                                                    <img src="images/medal.svg">
+                                                                    تميز الإعلان
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
                                                         <div class="info">
                                                             <p class="title">
                                                                 <a href="#">
@@ -611,39 +610,42 @@
                                                                         <p>350 الف ريال</p>
                                                                     </div>
                                                                 </div>
+                                                                <div class="col-md-12">
+                                                                    <div class="more">
+                                                                        <a href="#">المزيد</a>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <button>تحديث</button>
                                                 </div>
 
                                             </div>
                                             <div class="col-md-6">
-                                                <div class="all">
-                                                    <div class="dropdown">
-                                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                                                            role="button" data-bs-toggle="dropdown"
-                                                            aria-expanded="false">
-                                                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                        </a>
-                                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                            <li><a class="dropdown-item" href="#">تعديل الاعلان</a></li>
-                                                            <li><a class="dropdown-item" href="#">حذف الاعلان</a></li>
-                                                            <li>
-                                                                <a class="dropdown-item" href="#">مشاركة الاعلان</a>
-                                                            </li>
-                                                            <li>
-                                                                <a class="dropdown-item" href="#">إلغاء تنشيط
-                                                                    الإعلان</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
+                                                <div class="feat">
+
                                                     <div class="parent d-flex">
-                                                        <figure class="photo">
+
+                                                        <div class="photo">
                                                             <a href="#">
                                                                 <img src="images/modern-living-room-style.png">
                                                             </a>
-                                                        </figure>
+                                                            <div class="d-flex">
+                                                                <div class="verify">
+                                                                    <span>نشط</span>
+                                                                </div>
+                                                                <div class="verify">
+                                                                    <span>مرخص</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="ad-feat">
+                                                                <a href="#">
+                                                                    <img src="images/medal.svg">
+                                                                    تميز الإعلان
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
                                                         <div class="info">
                                                             <p class="title">
                                                                 <a href="#">
@@ -677,10 +679,14 @@
                                                                         <p>350 الف ريال</p>
                                                                     </div>
                                                                 </div>
+                                                                <div class="col-md-12">
+                                                                    <div class="more">
+                                                                        <a href="#">المزيد</a>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <button>تحديث</button>
                                                 </div>
 
                                             </div>
@@ -689,34 +695,33 @@
                                 </div>
                                 <div class="tab-pane fade" id="pills-accept" role="tabpanel"
                                     aria-labelledby="pills-accept-tab">
-                                    <div class="ads-filter">
+                                    <div class="featured-aqars">
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <div class="all">
-                                                    <div class="dropdown">
-                                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                                                            role="button" data-bs-toggle="dropdown"
-                                                            aria-expanded="false">
-                                                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                        </a>
-                                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                            <li><a class="dropdown-item" href="#">تعديل الاعلان</a></li>
-                                                            <li><a class="dropdown-item" href="#">حذف الاعلان</a></li>
-                                                            <li>
-                                                                <a class="dropdown-item" href="#">مشاركة الاعلان</a>
-                                                            </li>
-                                                            <li>
-                                                                <a class="dropdown-item" href="#">إلغاء تنشيط
-                                                                    الإعلان</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
+                                                <div class="feat">
+
                                                     <div class="parent d-flex">
-                                                        <figure class="photo">
+
+                                                        <div class="photo">
                                                             <a href="#">
                                                                 <img src="images/modern-living-room-style.png">
                                                             </a>
-                                                        </figure>
+                                                            <div class="d-flex">
+                                                                <div class="verify">
+                                                                    <span>نشط</span>
+                                                                </div>
+                                                                <div class="verify">
+                                                                    <span>مرخص</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="ad-feat">
+                                                                <a href="#">
+                                                                    <img src="images/medal.svg">
+                                                                    تميز الإعلان
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
                                                         <div class="info">
                                                             <p class="title">
                                                                 <a href="#">
@@ -750,39 +755,42 @@
                                                                         <p>350 الف ريال</p>
                                                                     </div>
                                                                 </div>
+                                                                <div class="col-md-12">
+                                                                    <div class="more">
+                                                                        <a href="#">المزيد</a>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <button>تحديث</button>
                                                 </div>
 
                                             </div>
                                             <div class="col-md-6">
-                                                <div class="all">
-                                                    <div class="dropdown">
-                                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                                                            role="button" data-bs-toggle="dropdown"
-                                                            aria-expanded="false">
-                                                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                        </a>
-                                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                            <li><a class="dropdown-item" href="#">تعديل الاعلان</a></li>
-                                                            <li><a class="dropdown-item" href="#">حذف الاعلان</a></li>
-                                                            <li>
-                                                                <a class="dropdown-item" href="#">مشاركة الاعلان</a>
-                                                            </li>
-                                                            <li>
-                                                                <a class="dropdown-item" href="#">إلغاء تنشيط
-                                                                    الإعلان</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
+                                                <div class="feat">
+
                                                     <div class="parent d-flex">
-                                                        <figure class="photo">
+
+                                                        <div class="photo">
                                                             <a href="#">
                                                                 <img src="images/modern-living-room-style.png">
                                                             </a>
-                                                        </figure>
+                                                            <div class="d-flex">
+                                                                <div class="verify">
+                                                                    <span>نشط</span>
+                                                                </div>
+                                                                <div class="verify">
+                                                                    <span>مرخص</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="ad-feat">
+                                                                <a href="#">
+                                                                    <img src="images/medal.svg">
+                                                                    تميز الإعلان
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
                                                         <div class="info">
                                                             <p class="title">
                                                                 <a href="#">
@@ -816,39 +824,42 @@
                                                                         <p>350 الف ريال</p>
                                                                     </div>
                                                                 </div>
+                                                                <div class="col-md-12">
+                                                                    <div class="more">
+                                                                        <a href="#">المزيد</a>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <button>تحديث</button>
                                                 </div>
 
                                             </div>
                                             <div class="col-md-6">
-                                                <div class="all">
-                                                    <div class="dropdown">
-                                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                                                            role="button" data-bs-toggle="dropdown"
-                                                            aria-expanded="false">
-                                                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                        </a>
-                                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                            <li><a class="dropdown-item" href="#">تعديل الاعلان</a></li>
-                                                            <li><a class="dropdown-item" href="#">حذف الاعلان</a></li>
-                                                            <li>
-                                                                <a class="dropdown-item" href="#">مشاركة الاعلان</a>
-                                                            </li>
-                                                            <li>
-                                                                <a class="dropdown-item" href="#">إلغاء تنشيط
-                                                                    الإعلان</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
+                                                <div class="feat">
+
                                                     <div class="parent d-flex">
-                                                        <figure class="photo">
+
+                                                        <div class="photo">
                                                             <a href="#">
                                                                 <img src="images/modern-living-room-style.png">
                                                             </a>
-                                                        </figure>
+                                                            <div class="d-flex">
+                                                                <div class="verify">
+                                                                    <span>نشط</span>
+                                                                </div>
+                                                                <div class="verify">
+                                                                    <span>مرخص</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="ad-feat">
+                                                                <a href="#">
+                                                                    <img src="images/medal.svg">
+                                                                    تميز الإعلان
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
                                                         <div class="info">
                                                             <p class="title">
                                                                 <a href="#">
@@ -882,39 +893,42 @@
                                                                         <p>350 الف ريال</p>
                                                                     </div>
                                                                 </div>
+                                                                <div class="col-md-12">
+                                                                    <div class="more">
+                                                                        <a href="#">المزيد</a>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <button>تحديث</button>
                                                 </div>
 
                                             </div>
                                             <div class="col-md-6">
-                                                <div class="all">
-                                                    <div class="dropdown">
-                                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                                                            role="button" data-bs-toggle="dropdown"
-                                                            aria-expanded="false">
-                                                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                        </a>
-                                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                            <li><a class="dropdown-item" href="#">تعديل الاعلان</a></li>
-                                                            <li><a class="dropdown-item" href="#">حذف الاعلان</a></li>
-                                                            <li>
-                                                                <a class="dropdown-item" href="#">مشاركة الاعلان</a>
-                                                            </li>
-                                                            <li>
-                                                                <a class="dropdown-item" href="#">إلغاء تنشيط
-                                                                    الإعلان</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
+                                                <div class="feat">
+
                                                     <div class="parent d-flex">
-                                                        <figure class="photo">
+
+                                                        <div class="photo">
                                                             <a href="#">
                                                                 <img src="images/modern-living-room-style.png">
                                                             </a>
-                                                        </figure>
+                                                            <div class="d-flex">
+                                                                <div class="verify">
+                                                                    <span>نشط</span>
+                                                                </div>
+                                                                <div class="verify">
+                                                                    <span>مرخص</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="ad-feat">
+                                                                <a href="#">
+                                                                    <img src="images/medal.svg">
+                                                                    تميز الإعلان
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
                                                         <div class="info">
                                                             <p class="title">
                                                                 <a href="#">
@@ -948,39 +962,42 @@
                                                                         <p>350 الف ريال</p>
                                                                     </div>
                                                                 </div>
+                                                                <div class="col-md-12">
+                                                                    <div class="more">
+                                                                        <a href="#">المزيد</a>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <button>تحديث</button>
                                                 </div>
 
                                             </div>
                                             <div class="col-md-6">
-                                                <div class="all">
-                                                    <div class="dropdown">
-                                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                                                            role="button" data-bs-toggle="dropdown"
-                                                            aria-expanded="false">
-                                                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                        </a>
-                                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                            <li><a class="dropdown-item" href="#">تعديل الاعلان</a></li>
-                                                            <li><a class="dropdown-item" href="#">حذف الاعلان</a></li>
-                                                            <li>
-                                                                <a class="dropdown-item" href="#">مشاركة الاعلان</a>
-                                                            </li>
-                                                            <li>
-                                                                <a class="dropdown-item" href="#">إلغاء تنشيط
-                                                                    الإعلان</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
+                                                <div class="feat">
+
                                                     <div class="parent d-flex">
-                                                        <figure class="photo">
+
+                                                        <div class="photo">
                                                             <a href="#">
                                                                 <img src="images/modern-living-room-style.png">
                                                             </a>
-                                                        </figure>
+                                                            <div class="d-flex">
+                                                                <div class="verify">
+                                                                    <span>نشط</span>
+                                                                </div>
+                                                                <div class="verify">
+                                                                    <span>مرخص</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="ad-feat">
+                                                                <a href="#">
+                                                                    <img src="images/medal.svg">
+                                                                    تميز الإعلان
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
                                                         <div class="info">
                                                             <p class="title">
                                                                 <a href="#">
@@ -1014,39 +1031,42 @@
                                                                         <p>350 الف ريال</p>
                                                                     </div>
                                                                 </div>
+                                                                <div class="col-md-12">
+                                                                    <div class="more">
+                                                                        <a href="#">المزيد</a>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <button>تحديث</button>
                                                 </div>
 
                                             </div>
                                             <div class="col-md-6">
-                                                <div class="all">
-                                                    <div class="dropdown">
-                                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                                                            role="button" data-bs-toggle="dropdown"
-                                                            aria-expanded="false">
-                                                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                        </a>
-                                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                            <li><a class="dropdown-item" href="#">تعديل الاعلان</a></li>
-                                                            <li><a class="dropdown-item" href="#">حذف الاعلان</a></li>
-                                                            <li>
-                                                                <a class="dropdown-item" href="#">مشاركة الاعلان</a>
-                                                            </li>
-                                                            <li>
-                                                                <a class="dropdown-item" href="#">إلغاء تنشيط
-                                                                    الإعلان</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
+                                                <div class="feat">
+
                                                     <div class="parent d-flex">
-                                                        <figure class="photo">
+
+                                                        <div class="photo">
                                                             <a href="#">
                                                                 <img src="images/modern-living-room-style.png">
                                                             </a>
-                                                        </figure>
+                                                            <div class="d-flex">
+                                                                <div class="verify">
+                                                                    <span>نشط</span>
+                                                                </div>
+                                                                <div class="verify">
+                                                                    <span>مرخص</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="ad-feat">
+                                                                <a href="#">
+                                                                    <img src="images/medal.svg">
+                                                                    تميز الإعلان
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
                                                         <div class="info">
                                                             <p class="title">
                                                                 <a href="#">
@@ -1080,10 +1100,14 @@
                                                                         <p>350 الف ريال</p>
                                                                     </div>
                                                                 </div>
+                                                                <div class="col-md-12">
+                                                                    <div class="more">
+                                                                        <a href="#">المزيد</a>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <button>تحديث</button>
                                                 </div>
 
                                             </div>
