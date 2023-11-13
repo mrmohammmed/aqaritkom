@@ -2181,26 +2181,35 @@ datalist {
 
 .myProfile .personal-data .infoTitle {
   border-radius: 13px 13px 0px 0px;
-  text-align: center;
   background-color: rgba(255, 136, 27, 0.09);
-  padding: 25px 0;
+  padding: 25px 20px;
+  display: flex;
+  justify-content: space-between;
 }
-
-.myProfile .personal-data .infoTitle h2 {
-  padding-bottom: 20px;
-  margin-bottom: 0;
+.myProfile .personal-data .infoTitle .right{
+  padding-top: 20px;
 }
-
-.myProfile .personal-data .infoTitle h2,
-.myProfile .personal-data .infoTitle p {
-  color: #4a4a4a;
+.myProfile .personal-data .infoTitle .right p{
+  color: #000;
   font-size: 16px;
+  padding-bottom: 10px;
+}
+.myProfile .personal-data .infoTitle .right h2{
+  color: #000;
+  font-size: 18px;
+}
+.myProfile .personal-data .infoTitle .right span{
+  color: #4A4A4A;
+  font-size: 14px;
+}
+.myProfile .personal-data .infoTitle .left a{
+  color: #F44336;
+  font-size: 14px;
+  text-decoration: underline;
 }
 
 .rating-stars {
-  display: inline-block;
   position: relative;
-  margin-right: 10px;
 }
 
 .rating-stars ul {
@@ -2209,7 +2218,7 @@ datalist {
 
   -moz-user-select: none;
   -webkit-user-select: none;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .rating-stars ul > li.star {
@@ -2228,7 +2237,7 @@ datalist {
 /* Hover state of the stars */
 
 .rating-stars ul > li.star.hover > .fa-star {
-  color: #ffcc36;
+  color: var(--secondary-color);
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
@@ -2238,7 +2247,7 @@ datalist {
 /* Selected state of the stars */
 
 .rating-stars ul > li.star.selected > .fa-star {
-  color: #ffcc36;
+  color: var(--secondary-color);
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
