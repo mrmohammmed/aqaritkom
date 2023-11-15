@@ -645,6 +645,10 @@ datalist {
   position: relative;
 }
 
+.featured-aqars .feat .parent .unactive {
+  background-color: rgba(244, 67, 54, 0.15);
+}
+
 .featured-aqars .feat .parent .verify:before {
   position: absolute;
   content: '';
@@ -657,12 +661,21 @@ datalist {
   right: 9px;
 }
 
+.featured-aqars .feat .parent .unactive:before {
+  background-color: #F44336;
+  right: 3px;
+}
+
 .featured-aqars .feat .parent .verify:last-child {
   margin-right: 5px;
 }
 
 .featured-aqars .feat .parent .verify span {
   color: #00ba00;
+}
+
+.featured-aqars .feat .parent .unactive span {
+  color: #F44336;
 }
 
 .featured-aqars .feat .parent .photo .ad-feat a {
@@ -4529,4 +4542,30 @@ input[type="email"] {
   font-size: 16px;
   width: 100%;
   border: 1px solid #fff;
+}
+
+.myProfile .featured-aqars .more .dropdown-menu {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 9px;
+  padding: 10px 15px 10px 15px;
+}
+
+.myProfile .featured-aqars .feat .parent .info .more .dropdown-menu a {
+  border: 0px;
+  background-color: transparent;
+  text-align: right;
+  transition: all .3s ease-in-out;
+  margin-top: 0px;
+}
+
+.myProfile .featured-aqars .feat .parent .dropdown-toggle::after {
+  display: none;
+}
+
+.featured-aqars .feat .parent .info .more .dropdown a {
+  color: var(--primary-color);
+  padding: 0px;
 }
