@@ -255,6 +255,34 @@
     width: auto;
     height: auto;
   }
+  .featured-aqars .feat .parent .photo{
+    margin-top: 50px;
+  }
+  .aqar-companies .company .parent{
+    display: block;
+  }
+  .aqar-companies .company .parent .photo{
+    width: 100%;
+  }
+  .aqar-companies .company .parent .info h2{
+    text-align: center;
+  }
+  .aqar-companies .company .parent .photo img{
+    display: table;
+    margin: auto;
+  }
+  .aqar-companies .company .parent .info{
+    width: 100%;
+  }
+  .aqar-companies .company .parent .info ul li{
+    padding: 15px 25px;
+  }
+  .marketer-profile .parent .info{
+    margin-right: 0px;
+  }
+  .marketer-profile .parent .info .links-contact li{
+    margin-left: 0px;
+  }
 }
 @media (max-width: 405px) {
 .myProfile .personal-data .nav-link{
