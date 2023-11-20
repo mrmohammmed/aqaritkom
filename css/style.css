@@ -414,12 +414,7 @@ input[type="number"] {
   padding: 5px 5px 10px 5px;
 }
 
-.navbar .actions .dropdown img {
-  width: 46px;
-  height: 46px;
-  border-radius: 50%;
-  object-fit: fill;
-}
+.navbar .actions .dropdown img {}
 
 .myProfile .personal-data .infoTitle .photo img {
   width: 94px;
