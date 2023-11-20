@@ -4476,12 +4476,16 @@ input[type="email"] {
   width: 100%;
   box-shadow: 0px 3px 6px #00000029;
   border-radius: 13px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
   color: #000;
 }
 
 .addLicence .licence .nav-pills .nav-item .nav-link.active {
   background-color: var(--primary-color);
   color: #fff;
+  border-radius: 13px;
+  border: 1px solid var(--primary-color);
 }
 
 .addLicence .licence .tab-content .first {
@@ -4978,42 +4982,42 @@ input[type="email"] {
   padding-left: 30px;
 }
 
-.table-package thead tr {
+.myProfile .table-package thead tr {
   background-color: var(--primary-color);
 }
 
-.table-package thead tr th {
+.myProfile .table-package thead tr th {
   color: #fff;
   padding: 20px 20px;
 }
 
-.table-package tbody tr th,
-.table-package tbody tr td {
+.myProfile .table-package tbody tr th,
+.myProfile .table-package tbody tr td {
 
   padding: 20px 20px;
 }
 
 
 
-.table-package tbody tr {
+.myProfile .table-package tbody tr {
   margin-bottom: 30px;
   background-color: #fff;
 }
 
-.table-package tbody tr th,
-.table-package tbody tr td {
+.myProfile .table-package tbody tr th,
+.myProfile .table-package tbody tr td {
   box-shadow: none;
   border: 0px;
   background-color: #F6F6F6;
 }
 
-.table-package tbody tr th,
-.table-package tbody tr td {
+.myProfile .table-package tbody tr th,
+.myProfile .table-package tbody tr td {
 
   margin-bottom: 20px;
 }
 
-.table-package tbody tr td span {
+.myProfile .table-package tbody tr td span {
   width: 30px;
   height: 30px;
   background-color: rgba(38, 47, 106, .2);
@@ -5024,17 +5028,120 @@ input[type="email"] {
   line-height: 30px;
 }
 
-.table-package tbody tr td .dots {
+.myProfile .table-package tbody tr td .dots {
   background-color: transparent;
   width: auto;
   height: auto;
 }
 
-.table>:not(:first-child) {
+.myProfile .table>:not(:first-child) {
   border: 0px;
 }
 
-.table-package tbody {
+.myProfile .table-package tbody {
   background-color: red;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
+}
+
+.myProfile .table {
+  margin-bottom: 60px;
+}
+
+.myProfile .table-package .date {
+  background-color: rgba(38, 47, 106, .1);
+  padding: 20px 30px;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.myProfile .table-package .date p {
+  color: var(--primary-color);
+  font-size: 18px;
+}
+
+.myProfile .table-package .date-finish {
+  background-color: rgba(255, 136, 27, .1);
+}
+
+.myProfile .table-package .date-finish p {
+  color: var(--secondary-color);
+}
+
+.myProfile .table-package .parent {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 40px;
+}
+
+.myProfile .table-package .parent button {
+  border: 0px;
+  background-color: transparent;
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+.myProfile .table-package .parent .upgrade,
+.myProfile .table-package .parent .cancel {
+  padding-top: 70px;
+}
+
+.myProfile .table-package .parent .upgrade button {
+  color: var(--secondary-color);
+}
+
+.myProfile .table-package .parent .cancel button {
+  color: #F44336;
+}
+
+.myProfile .table-package .parent .alarm h2 {
+  color: #000;
+  font-size: 18px;
+  margin: 0;
+  padding: 10px 0px;
+}
+
+.myProfile .table-package .parent .alarm p {
+  color: #989898;
+  font-size: 16px;
+
+}
+
+.modal-marcketing .action-pages ul {
+  justify-content: space-between;
+  padding: 0px 80px;
+  margin-bottom: 30px;
+}
+
+.modal-marcketing .action-pages ul button {
+  border-radius: 8px;
+  text-align: center;
+  width: 110px;
+  height: 36px;
+  background-color: #F6F6F6;
+  border: 0px;
+  color: #000;
+}
+
+.modal-marcketing .action-pages ul li:last-of-type button {
+  background-color: var(--secondary-color);
+  color: #fff;
+  font-size: 16px;
+}
+
+.terms {
+  padding: 70px 0px;
+}
+
+.terms h2 {
+  font-size: 22px;
+  color: var(--primary-color);
+  padding-bottom: 20px;
+}
+
+.terms p {
+  color: #000;
+  font-size: 16px;
+  margin-bottom: 25px;
+  line-height: 30px;
 }
