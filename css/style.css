@@ -625,7 +625,9 @@ datalist {
 }
 
 .featured-aqars .feat .parent .photo img {
+  width: 100%;
   border-radius: 10px;
+  max-height: 141px;
 }
 
 .featured-aqars .feat .parent .verify {

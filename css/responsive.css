@@ -127,8 +127,15 @@
     color: #fff;
   }
 
-  .navbar .actions ul {
-    justify-content: space-around;
+  .navbar .actions .d-flex {
+    display: block !important;
+  }
+
+  .navbar .actions ul .add a {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin: auto;
+    margin-top: 20px;
   }
 
   .main-content p {
@@ -152,8 +159,13 @@
   }
 
   .navbar .actions .dropdown {
-    margin-left: 25px;
+
     margin-top: 15px;
+  }
+
+  .navbar .actions .download .download-app {
+    right: 30%;
+    top: 60px;
   }
 
   .aqar-company .owl-theme .owl-nav {
@@ -372,7 +384,9 @@
     width: 100%;
   }
 
-  .featured-aqars .feat .parent .photo img {}
+  .featured-aqars .feat .parent .photo img {
+    max-height: inherit;
+  }
 
   .featured-aqars .feat .parent .verify {
     width: 50%;
@@ -415,6 +429,32 @@
 
   .featured-aqars .feat .parent .photo .ad-feat img {
     width: auto;
+  }
+
+  .company-profile ul li {
+    width: auto;
+  }
+
+  .company-profile ul {
+    margin-top: 30px;
+  }
+
+  .company-profile ul li a {
+    font-size: 15px;
+  }
+
+  .myProfile .addAdsData .nav-pills .nav-link {
+    padding-right: 0px;
+    padding-left: 0px;
+    font-size: 15px;
+  }
+
+  .myProfile .packageTypeInfo {
+    margin-top: 30px;
+  }
+
+  .suggestion {
+    padding-bottom: 50px;
   }
 }
 
