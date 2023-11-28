@@ -795,6 +795,10 @@ datalist {
   font-size: 14px;
 }
 
+.featured-aqars .feat .parent .info .amount span img {
+  padding-left: 5px;
+}
+
 .featured-aqars .feat .watch-details {
   border-radius: 10px;
   background-color: #262f6a17;
