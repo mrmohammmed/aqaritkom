@@ -627,7 +627,12 @@ datalist {
 .featured-aqars .feat .parent .photo img {
   width: 100%;
   border-radius: 10px;
-  max-height: 141px;
+  height: 141px;
+}
+
+.featured-aqars .feat .parent .photo .ad-feat img {
+  height: auto;
+  width: auto;
 }
 
 .featured-aqars .feat .parent .verify {
@@ -1175,8 +1180,8 @@ datalist {
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow b {
-  position: relative;
-  border: 0px;
+  position: relative !important;
+  border: 0px !important;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow b::before {
@@ -4093,11 +4098,14 @@ a:hover {
 
 .aqar-companies .company .parent .photo img {
   border-radius: 12px;
+  height: 150px;
+  width: 100%;
 }
 
 .aqar-companies .company .parent .info {
   width: 75%;
   margin-top: 10px;
+  margin-right: 15px;
 }
 
 .aqar-companies .company .parent .info h2 {

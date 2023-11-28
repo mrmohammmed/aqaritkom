@@ -357,6 +357,7 @@
   .aqar-companies .company .parent .photo img {
     display: table;
     margin: auto;
+    height: auto;
   }
 
   .aqar-companies .company .parent .info {
@@ -456,6 +457,41 @@
   .suggestion {
     padding-bottom: 50px;
   }
+
+  .aqar-companies .company .parent .info {
+    margin-right: 0px;
+  }
+
+  .topSelectSearch .detectCountry {
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .topSelectSearch .showMap a {
+    display: table;
+    margin: auto;
+    margin-top: 15px;
+  }
+
+  .topSelectSearch .detectCountry .search {
+    width: 10%;
+  }
+
+  .topSelectSearch .detectCountry .country {
+    width: 40%;
+  }
+
+  .topSelectSearch .detectCountry .destination {
+    width: 40%;
+  }
+
+  .topSelectSearch,
+  .filteration .search-filter {
+    overflow: hidden;
+  }
+
 }
 
 @media (max-width: 405px) {
@@ -567,6 +603,93 @@
 
   .register .parent .fill-data .enroll {
     margin: 50px 20px 40px 20px;
+  }
+
+  .aqar-companies .col-md-6 {
+    width: 100%;
+  }
+
+  .featured-aqars .feat .parent {
+    display: block !important;
+    text-align: center;
+  }
+
+  .featured-aqars .feat .parent .photo {
+    width: 100%;
+  }
+
+  .featured-aqars .feat .parent .photo img {
+    max-height: inherit;
+  }
+
+  .featured-aqars .feat .parent .verify {
+    width: 50%;
+  }
+
+  .featured-aqars .feat .parent .title {
+    padding-top: 15px;
+  }
+
+  .featured-aqars .feat .parent .sub-title {
+    border-bottom: 0px;
+  }
+
+  .featured-aqars .feat .parent .info .col-md-6 {
+    width: 25%;
+  }
+
+  .featured-aqars .feat .parent .info .price {
+    height: 46px;
+    line-height: 46px;
+    margin-top: 20px;
+  }
+
+  .filteration .featured-aqars .col-md-6 {
+    width: 100%;
+  }
+
+  .topSelectSearch .detectCountry {
+    justify-content: center;
+    overflow: hidden;
+
+    width: 100%;
+  }
+
+  .topSelectSearch .showMap a {
+    display: table;
+    margin: auto;
+
+  }
+
+  .topSelectSearch .detectCountry .search {
+    width: 10%;
+  }
+
+  .topSelectSearch .detectCountry .country {
+    width: 40%;
+  }
+
+  .topSelectSearch .detectCountry .destination {
+    width: 40%;
+  }
+
+  .featured-aqars .feat .parent .photo img {
+    width: auto;
+    max-width: 100%;
+  }
+
+  .topSelectSearch,
+  .filteration .search-filter {
+    overflow: hidden;
+  }
+
+  .topSelectSearch .offset-md-1,
+  .topSelectSearch .offset-md-2 {
+    margin-right: 0px;
+  }
+
+  .topSelectSearch .col-md-4 {
+    width: 50%;
   }
 }
 
