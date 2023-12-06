@@ -105,7 +105,8 @@ input:focus,
   font-size: 18px;
 }
 
-.the-title .second a {}
+.the-title .second a {
+}
 
 .link-style-small {
   width: 160px;
@@ -414,7 +415,8 @@ input[type="number"] {
   padding: 5px 5px 10px 5px;
 }
 
-.navbar .actions .dropdown img {}
+.navbar .actions .dropdown img {
+}
 
 .myProfile .personal-data .infoTitle .photo img {
   width: 94px;
@@ -851,7 +853,8 @@ datalist {
   margin-bottom: 30px;
 }
 
-.top-footer .log-footer .headquater img {}
+.top-footer .log-footer .headquater img {
+}
 
 .top-footer .log-footer .headquater p {
   color: #fff;
@@ -1216,7 +1219,7 @@ datalist {
   color: #000;
 }
 
-.select2-container--default .select2-results>.select2-results__options {
+.select2-container--default .select2-results > .select2-results__options {
   direction: rtl;
 }
 
@@ -1309,7 +1312,7 @@ datalist {
   line-height: 20px;
 }
 
-.filteration .search-filter .choosing .btn-group>.btn-check:checked+.btn {
+.filteration .search-filter .choosing .btn-group > .btn-check:checked + .btn {
   background-color: #fff;
   border-radius: 11px;
   outline: none;
@@ -1475,7 +1478,8 @@ datalist {
   margin-top: 40px;
 }
 
-.noUi-target.noUi-connect {}
+.noUi-target.noUi-connect {
+}
 
 /* Handles and cursors;
  */
@@ -1523,9 +1527,10 @@ datalist {
   margin-bottom: 10px;
 }
 
-.filteration .search-filter .aqartype .btn-group>.btn-check:checked+.btn {}
+.filteration .search-filter .aqartype .btn-group > .btn-check:checked + .btn {
+}
 
-.filteration .search-filter .aqartype .btn-group .btn-check:checked+.btn {
+.filteration .search-filter .aqartype .btn-group .btn-check:checked + .btn {
   background: #262f6a1f 0% 0% no-repeat padding-box;
   border-radius: 7px;
   outline: none;
@@ -1738,7 +1743,7 @@ datalist {
   bottom: 50%;
 }
 
-.company-subscripe .price ul input[type="radio"]:checked+label:after {
+.company-subscripe .price ul input[type="radio"]:checked + label:after {
   background-color: var(--primary-color);
 }
 
@@ -1817,7 +1822,6 @@ datalist {
   border-radius: 6px;
   border: 0px !important;
   line-height: 35px;
-
 }
 
 .company-profile .addresses li:first-of-type {
@@ -1903,7 +1907,7 @@ datalist {
   border-radius: 50%;
 }
 
-.form-wizard .wizard-form-radio input[type="radio"]~label {
+.form-wizard .wizard-form-radio input[type="radio"] ~ label {
   padding-left: 10px;
   cursor: pointer;
 }
@@ -2326,13 +2330,13 @@ datalist {
   margin-top: 10px;
 }
 
-.rating-stars ul>li.star {
+.rating-stars ul > li.star {
   display: inline-block;
 }
 
 /* Idle State of the stars */
 
-.rating-stars ul>li.star>.fa-star {
+.rating-stars ul > li.star > .fa-star {
   font-size: 15px;
   /* Change the size of the stars */
   color: #ccc;
@@ -2341,7 +2345,7 @@ datalist {
 
 /* Hover state of the stars */
 
-.rating-stars ul>li.star.hover>.fa-star {
+.rating-stars ul > li.star.hover > .fa-star {
   color: var(--secondary-color);
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
@@ -2351,7 +2355,7 @@ datalist {
 
 /* Selected state of the stars */
 
-.rating-stars ul>li.star.selected>.fa-star {
+.rating-stars ul > li.star.selected > .fa-star {
   color: var(--secondary-color);
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
@@ -3581,11 +3585,13 @@ a:hover {
   bottom: 0;
   left: 0;
   transform: translateX(-100%);
-  background-image: linear-gradient(90deg,
-      rgba(255, 255, 255, 0) 0,
-      rgba(255, 255, 255, 0.2) 20%,
-      rgba(255, 255, 255, 0.5) 60%,
-      rgba(255, 255, 255, 0));
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0,
+    rgba(255, 255, 255, 0.2) 20%,
+    rgba(255, 255, 255, 0.5) 60%,
+    rgba(255, 255, 255, 0)
+  );
   animation: load 1s infinite;
 }
 
@@ -3696,7 +3702,7 @@ a:hover {
   gap: 10px;
 }
 
-.property .features>div {
+.property .features > div {
   align-items: center;
   background: #f5f5f5;
   border-radius: 5px;
@@ -3968,7 +3974,7 @@ a:hover {
   padding: 15px;
   margin-bottom: 15px;
   display: block;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   border: 1px solid transparent;
 }
 
@@ -4872,16 +4878,15 @@ input[type="email"] {
 }
 
 .myProfile .addAdsData .order-status ul li:first-of-type .type-complete {
-  background-color: rgba(0, 186, 0, .13);
-
+  background-color: rgba(0, 186, 0, 0.13);
 }
 
 .myProfile .addAdsData .order-status ul li:first-of-type .type-complete p {
-  color: #00BA00;
+  color: #00ba00;
 }
 
 .myProfile .addAdsData .order-status ul li:first-of-type .type-complete:before {
-  background-color: #00BA00;
+  background-color: #00ba00;
   right: 20px;
 }
 
@@ -4906,7 +4911,7 @@ input[type="email"] {
 }
 
 .payment .right .payment-method {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   padding: 10px;
 }
 
@@ -4937,7 +4942,7 @@ input[type="email"] {
 
 .payment .right .coupon .enter input {
   width: 100%;
-  border: 0.5px solid #FF881B;
+  border: 0.5px solid #ff881b;
   border-radius: 11px;
   height: 47px;
   padding-right: 15px;
@@ -4955,7 +4960,7 @@ input[type="email"] {
 }
 
 .payment .left .billing {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   padding: 20px 10px;
 }
 
@@ -5002,11 +5007,8 @@ input[type="email"] {
 
 .myProfile .table-package tbody tr th,
 .myProfile .table-package tbody tr td {
-
   padding: 20px 20px;
 }
-
-
 
 .myProfile .table-package tbody tr {
   margin-bottom: 30px;
@@ -5017,19 +5019,18 @@ input[type="email"] {
 .myProfile .table-package tbody tr td {
   box-shadow: none;
   border: 0px;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
 }
 
 .myProfile .table-package tbody tr th,
 .myProfile .table-package tbody tr td {
-
   margin-bottom: 20px;
 }
 
 .myProfile .table-package tbody tr td span {
   width: 30px;
   height: 30px;
-  background-color: rgba(38, 47, 106, .2);
+  background-color: rgba(38, 47, 106, 0.2);
   border-radius: 50%;
   color: #000;
   text-align: center;
@@ -5043,7 +5044,7 @@ input[type="email"] {
   height: auto;
 }
 
-.myProfile .table>:not(:first-child) {
+.myProfile .table > :not(:first-child) {
   border: 0px;
 }
 
@@ -5057,7 +5058,7 @@ input[type="email"] {
 }
 
 .myProfile .table-package .date {
-  background-color: rgba(38, 47, 106, .1);
+  background-color: rgba(38, 47, 106, 0.1);
   padding: 20px 30px;
   justify-content: space-between;
   margin-bottom: 30px;
@@ -5069,7 +5070,7 @@ input[type="email"] {
 }
 
 .myProfile .table-package .date-finish {
-  background-color: rgba(255, 136, 27, .1);
+  background-color: rgba(255, 136, 27, 0.1);
 }
 
 .myProfile .table-package .date-finish p {
@@ -5100,7 +5101,7 @@ input[type="email"] {
 }
 
 .myProfile .table-package .parent .cancel button {
-  color: #F44336;
+  color: #f44336;
 }
 
 .myProfile .table-package .parent .alarm h2 {
@@ -5113,7 +5114,6 @@ input[type="email"] {
 .myProfile .table-package .parent .alarm p {
   color: #989898;
   font-size: 16px;
-
 }
 
 .modal-marcketing .action-pages ul {
@@ -5127,7 +5127,7 @@ input[type="email"] {
   text-align: center;
   width: 110px;
   height: 36px;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   border: 0px;
   color: #000;
 }
