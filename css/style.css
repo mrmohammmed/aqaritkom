@@ -5154,3 +5154,6 @@ input[type="email"] {
   margin-bottom: 25px;
   line-height: 30px;
 }
+.invalid-feedback {
+  position: absolute;
+}
