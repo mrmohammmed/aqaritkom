@@ -138,14 +138,15 @@
     </div>
   </section>
 
+
+
   <section class="addLicence">
     <div class="container">
       <div class="row">
         <div class="col-md-6 offset-md-3">
           <div class="licence">
             <h2 class="title text-center">
-              بناء على نظام الوساطة العقارية لايمكن الاعلان في المنصات
-              العقارية الا بوجود رخصة اعلان
+              بناء على نظام الوساطة العقارية لا يمكن الإعلان في المنصات العقارية إلا بوجود رخصة إعلان
             </h2>
             <div class="identity">
               <h2 class="text-center">نوع الهوية</h2>
@@ -168,26 +169,30 @@
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                   <div class="first">
                     <label>رقم هوية المعلن</label>
-                    <input type="number" class="form-control" placeholder="الرجاء كتابة رقم الهوية">
+                    <input type="number" class="form-control" id="national-id" placeholder="الرجاء كتابة رقم الهوية"
+                      required min="0">
                   </div>
                   <div class="first">
                     <label>رقم ترخيص الإعلان</label>
-                    <input type="number" class="form-control" placeholder="الرجاء كتابة الرقم">
+                    <input type="number" class="form-control" id="license-number" placeholder="الرجاء كتابة الرقم"
+                      required min="0">
                   </div>
-                  <button type="submit" data-bs-toggle="modal" data-bs-target="#continueing"
-                    class="continue">استمرار</button>
+                  <button type="submit" data-bs-toggle="modal" data-bs-target="#continueing" class="continue"
+                    onclick="return validateForm()">استمرار</button>
                 </div>
                 <div class="tab-pane fade" id="pills-building" role="tabpanel" aria-labelledby="pills-building-tab">
                   <div class="first">
                     <label>رقم هوية المعلن</label>
-                    <input type="number" class="form-control" placeholder="الرجاء كتابة رقم الهوية">
+                    <input type="number" class="form-control" id="national-id" placeholder="الرجاء كتابة رقم الهوية"
+                      required min="0">
                   </div>
                   <div class="first">
                     <label>رقم ترخيص الإعلان</label>
-                    <input type="number" class="form-control" placeholder="الرجاء كتابة الرقم">
+                    <input type="number" class="form-control" id="license-number" placeholder="الرجاء كتابة الرقم"
+                      required min="0">
                   </div>
-                  <button type="submit" data-bs-toggle="modal" data-bs-target="#continueing"
-                    class="continue">استمرار</button>
+                  <button type="submit" data-bs-toggle="modal" data-bs-target="#continueing" class="continue"
+                    onclick="return validateForm()">استمرار</button>
                 </div>
               </div>
             </div>
@@ -202,9 +207,9 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header modal-header-marketing">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          <buttontype="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="fa-solid fa-xmark"></i>
-          </button>
+            </button>
         </div>
         <div class="modal-body modal-marcketing text-center">
           <img src="images/correct (1).png">
@@ -214,6 +219,32 @@
       </div>
     </div>
   </div>
+
+  <script>
+    function validateForm() {
+      var nationalId = document.getElementById("national-id").value;
+      var licenseNumber = document.getElementById("license-number").value;
+
+      if (nationalId === "" || licenseNumber === "") {
+        alert("يرجى إدخال قيمة في كلتا الحقلين");
+        return false;
+      }
+
+      if (isNaN(nationalId) || isNaN(licenseNumber)) {
+        alert("يرجى إدخال أرقام صحيحة في الحقلين");
+        return false;
+      }
+
+      setTimeout(function () {
+        var modal = document.getElementById("continueing");
+        modal.classList.add("show");
+        modal.style.display = "block";
+        modal.setAttribute("aria-hidden", "false");
+      }, 1000);
+
+      return true;
+    }
+  </script>
 
   <!--start of footer -->
   <footer>
