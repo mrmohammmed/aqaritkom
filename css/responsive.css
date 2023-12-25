@@ -492,6 +492,9 @@
     overflow: hidden;
   }
 
+  .parent-choosing-hide {
+    display: none;
+  }
 }
 
 @media (max-width: 405px) {

@@ -105,8 +105,7 @@ input:focus,
   font-size: 18px;
 }
 
-.the-title .second a {
-}
+.the-title .second a {}
 
 .link-style-small {
   width: 160px;
@@ -415,8 +414,7 @@ input[type="number"] {
   padding: 5px 5px 10px 5px;
 }
 
-.navbar .actions .dropdown img {
-}
+.navbar .actions .dropdown img {}
 
 .myProfile .personal-data .infoTitle .photo img {
   width: 94px;
@@ -853,8 +851,7 @@ datalist {
   margin-bottom: 30px;
 }
 
-.top-footer .log-footer .headquater img {
-}
+.top-footer .log-footer .headquater img {}
 
 .top-footer .log-footer .headquater p {
   color: #fff;
@@ -1219,7 +1216,7 @@ datalist {
   color: #000;
 }
 
-.select2-container--default .select2-results > .select2-results__options {
+.select2-container--default .select2-results>.select2-results__options {
   direction: rtl;
 }
 
@@ -1283,6 +1280,7 @@ datalist {
   text-align: center;
   padding-top: 15px;
   padding-bottom: 15px;
+  position: relative;
 }
 
 .filteration .search-filter .title p {
@@ -1312,7 +1310,7 @@ datalist {
   line-height: 20px;
 }
 
-.filteration .search-filter .choosing .btn-group > .btn-check:checked + .btn {
+.filteration .search-filter .choosing .btn-group>.btn-check:checked+.btn {
   background-color: #fff;
   border-radius: 11px;
   outline: none;
@@ -1478,8 +1476,7 @@ datalist {
   margin-top: 40px;
 }
 
-.noUi-target.noUi-connect {
-}
+.noUi-target.noUi-connect {}
 
 /* Handles and cursors;
  */
@@ -1527,10 +1524,9 @@ datalist {
   margin-bottom: 10px;
 }
 
-.filteration .search-filter .aqartype .btn-group > .btn-check:checked + .btn {
-}
+.filteration .search-filter .aqartype .btn-group>.btn-check:checked+.btn {}
 
-.filteration .search-filter .aqartype .btn-group .btn-check:checked + .btn {
+.filteration .search-filter .aqartype .btn-group .btn-check:checked+.btn {
   background: #262f6a1f 0% 0% no-repeat padding-box;
   border-radius: 7px;
   outline: none;
@@ -1743,7 +1739,7 @@ datalist {
   bottom: 50%;
 }
 
-.company-subscripe .price ul input[type="radio"]:checked + label:after {
+.company-subscripe .price ul input[type="radio"]:checked+label:after {
   background-color: var(--primary-color);
 }
 
@@ -1907,7 +1903,7 @@ datalist {
   border-radius: 50%;
 }
 
-.form-wizard .wizard-form-radio input[type="radio"] ~ label {
+.form-wizard .wizard-form-radio input[type="radio"]~label {
   padding-left: 10px;
   cursor: pointer;
 }
@@ -2330,13 +2326,13 @@ datalist {
   margin-top: 10px;
 }
 
-.rating-stars ul > li.star {
+.rating-stars ul>li.star {
   display: inline-block;
 }
 
 /* Idle State of the stars */
 
-.rating-stars ul > li.star > .fa-star {
+.rating-stars ul>li.star>.fa-star {
   font-size: 15px;
   /* Change the size of the stars */
   color: #ccc;
@@ -2345,7 +2341,7 @@ datalist {
 
 /* Hover state of the stars */
 
-.rating-stars ul > li.star.hover > .fa-star {
+.rating-stars ul>li.star.hover>.fa-star {
   color: var(--secondary-color);
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
@@ -2355,7 +2351,7 @@ datalist {
 
 /* Selected state of the stars */
 
-.rating-stars ul > li.star.selected > .fa-star {
+.rating-stars ul>li.star.selected>.fa-star {
   color: var(--secondary-color);
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
@@ -3585,13 +3581,11 @@ a:hover {
   bottom: 0;
   left: 0;
   transform: translateX(-100%);
-  background-image: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0) 0,
-    rgba(255, 255, 255, 0.2) 20%,
-    rgba(255, 255, 255, 0.5) 60%,
-    rgba(255, 255, 255, 0)
-  );
+  background-image: linear-gradient(90deg,
+      rgba(255, 255, 255, 0) 0,
+      rgba(255, 255, 255, 0.2) 20%,
+      rgba(255, 255, 255, 0.5) 60%,
+      rgba(255, 255, 255, 0));
   animation: load 1s infinite;
 }
 
@@ -3702,7 +3696,7 @@ a:hover {
   gap: 10px;
 }
 
-.property .features > div {
+.property .features>div {
   align-items: center;
   background: #f5f5f5;
   border-radius: 5px;
@@ -5044,7 +5038,7 @@ input[type="email"] {
   height: auto;
 }
 
-.myProfile .table > :not(:first-child) {
+.myProfile .table> :not(:first-child) {
   border: 0px;
 }
 
@@ -5154,6 +5148,14 @@ input[type="email"] {
   margin-bottom: 25px;
   line-height: 30px;
 }
+
 .invalid-feedback {
   position: absolute;
+}
+
+.filteration .search-filter .title .svg-inline--fa {
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  left: 10px;
 }
