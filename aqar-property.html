@@ -128,124 +128,129 @@
         <div class="col-md-6 offset-md-3">
           <div class="licence">
             <h2 class="text-center">
-          بيانات ملكية العقار
+              بيانات ملكية العقار
             </h2>
             <h3>الرجاء كتابة البيانات التالية لإرسالها للهيئة العامة للعقار</h3>
             <div class="identity">
-            
+
               <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">
                   <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
                     type="button" role="tab" aria-controls="pills-home" aria-selected="true">
-              فرد
+                    فرد
                   </button>
                 </li>
                 <li class="nav-item" role="presentation">
                   <button class="nav-link" id="pills-building-tab" data-bs-toggle="pill"
                     data-bs-target="#pills-building" type="button" role="tab" aria-controls="pills-building"
                     aria-selected="false">
-             متعدد الملاك
+                    متعدد الملاك
                   </button>
                 </li>
-                      <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="pills-company-tab" data-bs-toggle="pill"
-                    data-bs-target="#pills-company" type="button" role="tab" aria-controls="pills-company"
-                    aria-selected="false">
-         شركة
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-company-tab" data-bs-toggle="pill" data-bs-target="#pills-company"
+                    type="button" role="tab" aria-controls="pills-company" aria-selected="false">
+                    شركة
                   </button>
                 </li>
               </ul>
-              <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                  <div class="first">
-                    <label>رقم الصك/السجل العيني</label>
-                    <input type="number" class="form-control" id="national-id" placeholder="الرجاء كتابة رقم الصك"
-                      required min="0">
+              <form method="" action="">
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                    aria-labelledby="pills-home-tab">
+                    <div class="first">
+                      <label>رقم الصك/السجل العيني</label>
+                      <input type="number" class="form-control" id="national-id" placeholder="الرجاء كتابة رقم الصك"
+                        required min="0">
+                    </div>
+                    <div class="first">
+                      <label>رقم جوال المالك</label>
+                      <input type="number" class="form-control" id="license-number" placeholder="رقم جوال مالك العقار"
+                        required min="0">
+                    </div>
+                    <div class="first">
+                      <label>رقم هوية المالك</label>
+                      <input type="number" class="form-control" id="license-number" placeholder="رقم هوية المالك"
+                        required min="0">
+                    </div>
+                    <div class="first">
+                      <label>تاريخ ميلاد المالك</label>
+
+                      <input type="text" id="hajriDateInput" class="form-control" placeholder="تاريخ الميلاد بالهجري">
+                    </div>
+
                   </div>
-                  <div class="first">
-                    <label>رقم جوال المالك</label>
-                    <input type="number" class="form-control" id="license-number" placeholder="رقم جوال مالك العقار"
-                      required min="0">
+                  <div class="tab-pane fade" id="pills-building" role="tabpanel" aria-labelledby="pills-building-tab">
+                    <div class="first">
+                      <label>رقم الصك/السجل العيني</label>
+                      <input type="number" class="form-control" id="national-id" placeholder="الرجاء كتابة رقم الصك"
+                        required min="0">
+                    </div>
+                    <div class="first">
+                      <label>رقم هوية أحد الملاك</label>
+                      <input type="number" class="form-control" id="national-id"
+                        placeholder="الرجاء كتابة رقم هوية أحد الملاك" required min="0">
+                    </div>
+                    <div class="first">
+                      <label>رقم هوية الوكيل</label>
+                      <input type="number" class="form-control" id="national-id"
+                        placeholder="الرجاء كتابة رقم هوية الوكيل" required min="0">
+                    </div>
+                    <div class="first">
+                      <label>رقم جوال الوكيل</label>
+                      <input type="number" class="form-control" id="national-id"
+                        placeholder="الرجاء كتابة رقم جوال الوكيل" required min="0">
+                    </div>
+                    <div class="first">
+                      <label>تاريخ ميلاد الوكيل</label>
+                      <input type="text" id="hajriDateInput2" class="form-control"
+                        placeholder="الرجاء كتابة تاريخ ميلاد الوكيل">
+                    </div>
+
                   </div>
-                        <div class="first">
-                    <label>رقم هوية المالك</label>
-                    <input type="number" class="form-control" id="license-number" placeholder="رقم هوية المالك"
-                      required min="0">
+                  <div class="tab-pane fade" id="pills-company" role="tabpanel" aria-labelledby="pills-company-tab">
+                    <div class="first">
+                      <label>رقم الصك/السجل العيني</label>
+                      <input type="number" class="form-control" id="national-id" placeholder="الرجاء كتابة رقم الصك"
+                        required min="0">
+                    </div>
+                    <div class="first">
+                      <label>رقم هوية أحد الملاك</label>
+                      <input type="number" class="form-control" id="national-id"
+                        placeholder="الرجاء كتابة رقم هوية أحد الملاك" required min="0">
+                    </div>
+                    <div class="first">
+                      <label>رقم هوية الوكيل</label>
+                      <input type="number" class="form-control" id="national-id"
+                        placeholder="الرجاء كتابة رقم هوية الوكيل" required min="0">
+                    </div>
+                    <div class="first">
+                      <label>الرقم الموحد/رقم السجل التجاري</label>
+                      <input type="number" class="form-control" id="national-id"
+                        placeholder="الرجاء كتابة الرقم الموحد/رقم السجل التجاري" required min="0">
+                    </div>
+                    <div class="first">
+                      <label>تاريخ ميلاد الوكيل</label>
+                      <input type="text" id="hajriDateInput3" class="form-control"
+                        placeholder="الرجاء كتابة تاريخ ميلاد الوكيل">
+
+                    </div>
+
                   </div>
-                          <div class="first">
-                    <label>تاريخ ميلاد المالك</label>
-           
-                 <input type="text" id="hajriDateInput" class="form-control" placeholder="تاريخ الميلاد بالهجري">
-                  </div>
-           
                 </div>
-                <div class="tab-pane fade" id="pills-building" role="tabpanel" aria-labelledby="pills-building-tab">
-                <div class="first">
-                    <label>رقم الصك/السجل العيني</label>
-                    <input type="number" class="form-control" id="national-id" placeholder="الرجاء كتابة رقم الصك"
-                      required min="0">
-                  </div>
-                        <div class="first">
-                    <label>رقم هوية أحد الملاك</label>
-                    <input type="number" class="form-control" id="national-id" placeholder="الرجاء كتابة رقم هوية أحد الملاك"
-                      required min="0">
-                  </div>
-                            <div class="first">
-                    <label>رقم هوية الوكيل</label>
-                    <input type="number" class="form-control" id="national-id" placeholder="الرجاء كتابة رقم هوية الوكيل"
-                      required min="0">
-                  </div>
-                            <div class="first">
-                    <label>رقم جوال الوكيل</label>
-                    <input type="number" class="form-control" id="national-id" placeholder="الرجاء كتابة رقم جوال الوكيل"
-                      required min="0">
-                  </div>
-                  <div class="first">
-                    <label>تاريخ ميلاد الوكيل</label>
-                         <input type="text" id="hajriDateInput2" class="form-control" placeholder="الرجاء كتابة تاريخ ميلاد الوكيل">
-                  </div>
-           
-                </div>
-                       <div class="tab-pane fade" id="pills-company" role="tabpanel" aria-labelledby="pills-company-tab">
-                 <div class="first">
-                    <label>رقم الصك/السجل العيني</label>
-                    <input type="number" class="form-control" id="national-id" placeholder="الرجاء كتابة رقم الصك"
-                      required min="0">
-                  </div>
-                        <div class="first">
-                    <label>رقم هوية أحد الملاك</label>
-                    <input type="number" class="form-control" id="national-id" placeholder="الرجاء كتابة رقم هوية أحد الملاك"
-                      required min="0">
-                  </div>
-                            <div class="first">
-                    <label>رقم هوية الوكيل</label>
-                    <input type="number" class="form-control" id="national-id" placeholder="الرجاء كتابة رقم هوية الوكيل"
-                      required min="0">
-                  </div>
-                            <div class="first">
-                    <label>الرقم الموحد/رقم السجل التجاري</label>
-                    <input type="number" class="form-control" id="national-id" placeholder="الرجاء كتابة الرقم الموحد/رقم السجل التجاري"
-                      required min="0">
-                  </div>
-                  <div class="first">
-                    <label>تاريخ ميلاد الوكيل</label>
-                           <input type="text" id="hajriDateInput3" class="form-control" placeholder="الرجاء كتابة تاريخ ميلاد الوكيل">
-                
-                  </div>
-          
-                </div>
-              </div>
+
             </div>
-           
-        </div>
-          
+
+          </div>
+
         </div>
         <div class="col-md-12">
-    <button type="submit" data-bs-toggle="modal" data-bs-target="#continueing" class="continue"
-                    onclick="return validateForm()">استمرار</button>
-                    <div class="clear"></div>
+          <button type="submit" data-bs-toggle="modal" data-bs-target="#continueing" class="continue"
+            onclick="return validateForm()">استمرار</button>
+          <div class="clear"></div>
+          </form>
         </div>
-       
+
       </div>
     </div>
   </section>
@@ -268,109 +273,109 @@
     </div>
   </div>
 
-<script>
-  var hajriDateInput = document.getElementById('hajriDateInput');
+  <script>
+    var hajriDateInput = document.getElementById('hajriDateInput');
 
-  hajriDateInput.addEventListener('focus', function() {
-    var datePicker = document.createElement('div');
-    datePicker.classList.add('hajri-datepicker');
+    hajriDateInput.addEventListener('focus', function () {
+      var datePicker = document.createElement('div');
+      datePicker.classList.add('hajri-datepicker');
 
-    var currentDate = moment().locale('ar-sa');
-    var selectedDate = null;
+      var currentDate = moment().locale('ar-sa');
+      var selectedDate = null;
 
-    renderCalendar();
+      renderCalendar();
 
-    function renderCalendar() {
-      datePicker.innerHTML = '';
+      function renderCalendar() {
+        datePicker.innerHTML = '';
 
-      // Month and year header
-      var header = document.createElement('div');
-      header.classList.add('header');
+        // Month and year header
+        var header = document.createElement('div');
+        header.classList.add('header');
 
-      var previousMonthButton = document.createElement('button');
-      previousMonthButton.innerHTML = '&lt;';
-      previousMonthButton.addEventListener('click', showPreviousMonth);
+        var previousMonthButton = document.createElement('button');
+        previousMonthButton.innerHTML = '&lt;';
+        previousMonthButton.addEventListener('click', showPreviousMonth);
 
-      var nextMonthButton = document.createElement('button');
-      nextMonthButton.innerHTML = '&gt;';
-      nextMonthButton.addEventListener('click', showNextMonth);
+        var nextMonthButton = document.createElement('button');
+        nextMonthButton.innerHTML = '&gt;';
+        nextMonthButton.addEventListener('click', showNextMonth);
 
-      var monthYearText = document.createElement('span');
-      monthYearText.innerHTML = currentDate.format('iMMMM iYYYY');
+        var monthYearText = document.createElement('span');
+        monthYearText.innerHTML = currentDate.format('iMMMM iYYYY');
 
-      header.appendChild(previousMonthButton);
-      header.appendChild(monthYearText);
-      header.appendChild(nextMonthButton);
+        header.appendChild(previousMonthButton);
+        header.appendChild(monthYearText);
+        header.appendChild(nextMonthButton);
 
-      datePicker.appendChild(header);
+        datePicker.appendChild(header);
 
-      // Days of the month
-      var daysContainer = document.createElement('div');
-      daysContainer.classList.add('days-container');
+        // Days of the month
+        var daysContainer = document.createElement('div');
+        daysContainer.classList.add('days-container');
 
-      var daysOfWeek = moment.weekdaysMin(true);
-      for (var i = 0; i < daysOfWeek.length; i++) {
-        var dayOfWeek = document.createElement('div');
-        dayOfWeek.classList.add('day-of-week');
-        dayOfWeek.innerHTML = daysOfWeek[i];
-        daysContainer.appendChild(dayOfWeek);
-      }
-
-      var firstDayOfMonth = moment(currentDate).startOf('iMonth').startOf('week');
-      var lastDayOfMonth = moment(currentDate).endOf('iMonth').endOf('week');
-
-      var currentDateIterator = moment(firstDayOfMonth);
-      while (currentDateIterator.isSameOrBefore(lastDayOfMonth)) {
-        var dayOfMonth = document.createElement('div');
-        dayOfMonth.classList.add('day-of-month');
-        dayOfMonth.innerHTML = currentDateIterator.format('iD');
-
-        if (currentDateIterator.isSame(selectedDate, 'day')) {
-          dayOfMonth.classList.add('selected');
+        var daysOfWeek = moment.weekdaysMin(true);
+        for (var i = 0; i < daysOfWeek.length; i++) {
+          var dayOfWeek = document.createElement('div');
+          dayOfWeek.classList.add('day-of-week');
+          dayOfWeek.innerHTML = daysOfWeek[i];
+          daysContainer.appendChild(dayOfWeek);
         }
 
-        dayOfMonth.addEventListener('click', selectDate);
+        var firstDayOfMonth = moment(currentDate).startOf('iMonth').startOf('week');
+        var lastDayOfMonth = moment(currentDate).endOf('iMonth').endOf('week');
 
-        if (!currentDateIterator.isSame(currentDate, 'iMonth')) {
-          dayOfMonth.classList.add('other-month');
+        var currentDateIterator = moment(firstDayOfMonth);
+        while (currentDateIterator.isSameOrBefore(lastDayOfMonth)) {
+          var dayOfMonth = document.createElement('div');
+          dayOfMonth.classList.add('day-of-month');
+          dayOfMonth.innerHTML = currentDateIterator.format('iD');
+
+          if (currentDateIterator.isSame(selectedDate, 'day')) {
+            dayOfMonth.classList.add('selected');
+          }
+
+          dayOfMonth.addEventListener('click', selectDate);
+
+          if (!currentDateIterator.isSame(currentDate, 'iMonth')) {
+            dayOfMonth.classList.add('other-month');
+          }
+
+          daysContainer.appendChild(dayOfMonth);
+
+          currentDateIterator.add(1, 'day');
         }
 
-        daysContainer.appendChild(dayOfMonth);
+        datePicker.appendChild(daysContainer);
 
-        currentDateIterator.add(1, 'day');
+        hajriDateInput.parentNode.insertBefore(datePicker, hajriDateInput.nextSibling);
       }
 
-      datePicker.appendChild(daysContainer);
+      function showPreviousMonth() {
+        currentDate.subtract(1, 'iMonth');
+        renderCalendar();
+      }
 
-      hajriDateInput.parentNode.insertBefore(datePicker, hajriDateInput.nextSibling);
-    }
+      function showNextMonth() {
+        currentDate.add(1, 'iMonth');
+        renderCalendar();
+      }
 
-    function showPreviousMonth() {
-      currentDate.subtract(1, 'iMonth');
-      renderCalendar();
-    }
+      function selectDate(event) {
+        var selectedDay = parseInt(event.target.innerHTML, 10);
+        selectedDate = moment(currentDate).date(selectedDay);
 
-    function showNextMonth() {
-      currentDate.add(1, 'iMonth');
-      renderCalendar();
-    }
+        hajriDateInput.value = selectedDate.format('iYYYY/iM/iD');
 
-    function selectDate(event) {
-      var selectedDay = parseInt(event.target.innerHTML, 10);
-      selectedDate = moment(currentDate).date(selectedDay);
+        renderCalendar();
+        hideDatePicker();
+      }
 
-      hajriDateInput.value = selectedDate.format('iYYYY/iM/iD');
+      function hideDatePicker() {
+        hajriDateInput.parentNode.removeChild(datePicker);
+      }
+    });
+  </script>
 
-      renderCalendar();
-      hideDatePicker();
-    }
-
-    function hideDatePicker() {
-      hajriDateInput.parentNode.removeChild(datePicker);
-    }
-  });
-</script>
-  
 
   <!--start of footer -->
   <footer>
@@ -460,8 +465,8 @@
   <script src="js/wow.min.js "></script>
   <!-- Select2 -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
-<script src="js/moment-hijri.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <script src="js/moment-hijri.js"></script>
 
   <script src="js/main.js "></script>
 </body>

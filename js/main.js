@@ -292,6 +292,14 @@ function myFunction() {
         pass.type = "password";
     }
 }
+function myFunctionConfirm() {
+    let pass2 = document.getElementById("inputpass2");
+    if (pass2.type === "password") {
+        pass2.type = "text";
+    } else {
+        pass2.type = "password";
+    }
+}
 
 function myFunction2() {
     let c = document.getElementById("confirmpass");

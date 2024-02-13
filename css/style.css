@@ -82,9 +82,11 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 ::placeholder {
   color: #d3d1d1;
 }
+
 input:focus,
 .form-control:focus {
   box-shadow: none;
@@ -107,8 +109,7 @@ input:focus,
   font-size: 18px;
 }
 
-.the-title .second a {
-}
+.the-title .second a {}
 
 .link-style-small {
   width: 160px;
@@ -417,7 +418,9 @@ input[type="number"] {
   padding: 5px 5px 10px 5px;
 }
 
-.navbar .actions .dropdown img {
+
+.myProfile {
+  padding-bottom: 60px;
 }
 
 .myProfile .personal-data .infoTitle .photo img {
@@ -674,13 +677,16 @@ datalist {
 .featured-aqars .feat .verify:last-child {
   margin-right: 5px;
 }
+
 .featured-aqars .feat .price {
   background-color: rgba(38, 47, 106, 0.18);
   color: #262f6a;
 }
+
 .featured-aqars .feat .price:before {
   display: none;
 }
+
 .featured-aqars .feat .verify span {
   color: #00ba00;
 }
@@ -744,8 +750,7 @@ datalist {
   color: #404040;
 }
 
-.featured-aqars .feat .info {
-}
+.featured-aqars .feat .info {}
 
 .featured-aqars .feat .info .more a {
   border: 0.5px solid #262f6a;
@@ -758,10 +763,12 @@ datalist {
   display: block;
   text-align: center;
 }
+
 .featured-aqars .feat .content {
   padding: 15px;
   border-bottom: 1px solid #ccc;
 }
+
 .featured-aqars .feat .title {
   font-size: 16px;
   color: var(--primary-color);
@@ -836,6 +843,7 @@ datalist {
   position: relative;
   top: 3px;
 }
+
 .featured-aqars .feat .featured-ad {
   position: absolute;
   left: 0px;
@@ -849,6 +857,7 @@ datalist {
   line-height: 26px;
   font-size: 13px;
 }
+
 .downloadNow {
   background-color: rgba(255, 136, 27, 0.06);
   position: relative;
@@ -874,8 +883,7 @@ datalist {
   margin-bottom: 30px;
 }
 
-.top-footer .log-footer .headquater img {
-}
+.top-footer .log-footer .headquater img {}
 
 .top-footer .log-footer .headquater p {
   color: #fff;
@@ -1058,6 +1066,7 @@ datalist {
   color: var(--primary-color);
   font-size: 16px;
 }
+
 #phone-form .svg-inline--fa,
 #company-form .fa-phone-volume,
 #marketer-form .fa-phone-volume,
@@ -1077,6 +1086,7 @@ datalist {
   display: block !important;
   height: 1rem;
 }
+
 .register .parent .fill-data .first .mice {
   position: absolute;
   bottom: 27px;
@@ -1168,6 +1178,7 @@ datalist {
   font-size: 19px;
   bottom: 2rem;
 }
+
 #phone-form .first .country,
 #company-form .first .country,
 #marketer-form .first .country,
@@ -1270,7 +1281,7 @@ datalist {
   color: #000;
 }
 
-.select2-container--default .select2-results > .select2-results__options {
+.select2-container--default .select2-results>.select2-results__options {
   direction: rtl;
 }
 
@@ -1364,7 +1375,7 @@ datalist {
   line-height: 20px;
 }
 
-.filteration .search-filter .choosing .btn-group > .btn-check:checked + .btn {
+.filteration .search-filter .choosing .btn-group>.btn-check:checked+.btn {
   background-color: #fff;
   border-radius: 11px;
   outline: none;
@@ -1530,8 +1541,7 @@ datalist {
   margin-top: 40px;
 }
 
-.noUi-target.noUi-connect {
-}
+.noUi-target.noUi-connect {}
 
 /* Handles and cursors;
  */
@@ -1579,10 +1589,9 @@ datalist {
   margin-bottom: 10px;
 }
 
-.filteration .search-filter .aqartype .btn-group > .btn-check:checked + .btn {
-}
+.filteration .search-filter .aqartype .btn-group>.btn-check:checked+.btn {}
 
-.filteration .search-filter .aqartype .btn-group .btn-check:checked + .btn {
+.filteration .search-filter .aqartype .btn-group .btn-check:checked+.btn {
   background: #262f6a1f 0% 0% no-repeat padding-box;
   border-radius: 7px;
   outline: none;
@@ -1795,7 +1804,7 @@ datalist {
   bottom: 50%;
 }
 
-.company-subscripe .price ul input[type="radio"]:checked + label:after {
+.company-subscripe .price ul input[type="radio"]:checked+label:after {
   background-color: var(--primary-color);
 }
 
@@ -1959,7 +1968,7 @@ datalist {
   border-radius: 50%;
 }
 
-.form-wizard .wizard-form-radio input[type="radio"] ~ label {
+.form-wizard .wizard-form-radio input[type="radio"]~label {
   padding-left: 10px;
   cursor: pointer;
 }
@@ -2370,6 +2379,7 @@ datalist {
   font-size: 14px;
   text-decoration: underline;
 }
+
 .myProfile .personal-data .infoTitle .left a.verified {
   color: #00ba00;
   font-size: 14px;
@@ -2389,13 +2399,13 @@ datalist {
   margin-top: 10px;
 }
 
-.rating-stars ul > li.star {
+.rating-stars ul>li.star {
   display: inline-block;
 }
 
 /* Idle State of the stars */
 
-.rating-stars ul > li.star > .fa-star {
+.rating-stars ul>li.star>.fa-star {
   font-size: 15px;
   /* Change the size of the stars */
   color: #ccc;
@@ -2404,7 +2414,7 @@ datalist {
 
 /* Hover state of the stars */
 
-.rating-stars ul > li.star.hover > .fa-star {
+.rating-stars ul>li.star.hover>.fa-star {
   color: var(--secondary-color);
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
@@ -2414,7 +2424,7 @@ datalist {
 
 /* Selected state of the stars */
 
-.rating-stars ul > li.star.selected > .fa-star {
+.rating-stars ul>li.star.selected>.fa-star {
   color: var(--secondary-color);
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
@@ -3644,13 +3654,11 @@ a:hover {
   bottom: 0;
   left: 0;
   transform: translateX(-100%);
-  background-image: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0) 0,
-    rgba(255, 255, 255, 0.2) 20%,
-    rgba(255, 255, 255, 0.5) 60%,
-    rgba(255, 255, 255, 0)
-  );
+  background-image: linear-gradient(90deg,
+      rgba(255, 255, 255, 0) 0,
+      rgba(255, 255, 255, 0.2) 20%,
+      rgba(255, 255, 255, 0.5) 60%,
+      rgba(255, 255, 255, 0));
   animation: load 1s infinite;
 }
 
@@ -3761,7 +3769,7 @@ a:hover {
   gap: 10px;
 }
 
-.property .features > div {
+.property .features>div {
   align-items: center;
   background: #f5f5f5;
   border-radius: 5px;
@@ -4647,6 +4655,7 @@ input[type="email"] {
 
 .myProfile .featured-aqars {
   padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .myProfile .addAdsData .nav-pills .nav-link.active {
@@ -4801,7 +4810,9 @@ input[type="email"] {
 
 .myProfile .no-package {
   padding-top: 200px;
-  padding-bottom: 200px;
+
+  position: relative;
+  height: 100%;
 }
 
 .myProfile .no-package img {
@@ -5104,7 +5115,7 @@ input[type="email"] {
   height: auto;
 }
 
-.myProfile .table > :not(:first-child) {
+.myProfile .table> :not(:first-child) {
   border: 0px;
 }
 
@@ -5190,6 +5201,7 @@ input[type="email"] {
   background-color: #f6f6f6;
   border: 0px;
   color: #000;
+  line-height: 36px;
 }
 
 .modal-marcketing .action-pages ul li:last-of-type button {
@@ -5218,6 +5230,7 @@ input[type="email"] {
 .verify-title {
   color: #262f6a;
 }
+
 .verify-message {
   color: #707070;
 }
@@ -5233,6 +5246,7 @@ input[type="email"] {
   padding-top: 20px;
   font-size: 2rem;
 }
+
 .nafath-login {
   display: flex;
   justify-content: center;
@@ -5241,12 +5255,15 @@ input[type="email"] {
   border-radius: 8px;
   margin-bottom: 1rem;
 }
+
 .nafath-login:hover {
   background-color: rgb(38, 47, 106, 0.1);
 }
+
 .nafath-login img {
   width: 10rem;
 }
+
 .nafath-login p {
   font-size: 1.1rem;
 }
@@ -5265,19 +5282,24 @@ input[type="email"] {
   left: 10px;
   display: none;
 }
+
 #loadMoreBtn {
   margin-top: 2rem;
 }
+
 .text-right {
   text-align: right !important;
 }
+
 .aqar-property {
   padding: 60px 0px;
 }
+
 .aqar-property .licence {
   border-radius: 35px;
   padding-top: 30px;
 }
+
 .aqar-property .licence h2 {
   box-shadow: none;
   background-color: transparent;
@@ -5285,18 +5307,22 @@ input[type="email"] {
   font-size: 16px;
   padding-bottom: 5px;
 }
+
 .aqar-property .licence h3 {
   text-align: center;
   color: #707070;
   font-size: 15px;
 }
+
 .aqar-property .licence .nav-pills .nav-item {
   width: 33.3%;
 }
+
 .aqar-property .licence .nav-pills {
   box-shadow: 0px 3px 6px #00000029;
   border-radius: 7px;
 }
+
 .aqar-property .licence .nav-pills .nav-item .nav-link {
   box-shadow: none;
   border-radius: 7px;
@@ -5305,13 +5331,16 @@ input[type="email"] {
 .aqar-property .licence .nav-pills .nav-item .nav-link.active {
   border-radius: 7px;
 }
+
 .aqar-property .licence .nav-pills .nav-item .nav-link.active {
   background-color: var(--secondary-color);
   border: 1px solid var(--secondary-color);
 }
+
 .aqar-property .tab-content {
   margin-top: 40px;
 }
+
 .aqar-property .continue {
   width: 165px;
   margin-top: 20px;
@@ -5372,4 +5401,136 @@ input[type="email"] {
 .hajri-datepicker .day-of-month.selected {
   background-color: #ccc;
   color: white;
+}
+
+.myProfile .add-account-link {
+  border-radius: 15px;
+  width: 233px;
+  height: 70px;
+  background-color: var(--primary-color);
+  text-align: center;
+  line-height: 70px;
+  color: #fff;
+  display: table;
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.myProfile .add-account-link img {
+  display: inline;
+}
+
+.myProfile .no-package .add-account-link span {
+  padding-right: 5px;
+}
+
+.myProfile .addAccount .first {
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.myProfile .addAccount .first label {
+  color: #000;
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
+.myProfile .addAccount .first input {
+  border: 0.5px solid #D3D1D1;
+  border-radius: 8px;
+  height: 60px;
+  padding-right: 40px;
+}
+
+.myProfile .addAccount .first .photo {
+  position: absolute;
+  top: 50%;
+  /* Adjust top value to vertically center the image */
+  transform: translateY(-50%);
+  /* Vertically center the image */
+  right: 10px;
+}
+
+.myProfile .addAccount .first .photo span {
+  border-left: 1px solid #ccc;
+  padding-left: 5px;
+}
+
+.myProfile .addAccount .first:nth-child(2) input {
+  padding-right: 110px;
+}
+
+.myProfile .addAccount .showEl {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  /*Verticallycentertheerrormessage*/
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.myProfile .addAccount button {
+  width: 100%;
+  background-color: var(--primary-color);
+  text-align: center;
+  color: #fff;
+  border-radius: 8px;
+  height: 60px;
+  border: 1px solid var(--primary-color);
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  margin-top: 50px;
+}
+
+.myProfile .addAccount button:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+.myProfile .addAccount .error-message {
+  position: absolute;
+  right: 10px;
+  top: 80%;
+  /* Vertically center the error message */
+  transform: translateY(-50%);
+  /* Vertically center the error message */
+  color: red;
+  font-size: 14px;
+}
+
+.myProfile .accountBranch {
+  position: relative;
+  height: 100%;
+}
+
+.myProfile .accountBranch .parent {
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 13px;
+  padding: 20px;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+
+.myProfile .accountBranch .parent .account-titles h2 {
+  color: #000;
+  font-size: 17px;
+  padding-bottom: 10px;
+}
+
+.myProfile .accountBranch .parent .account-links a {
+  display: block;
+  margin-bottom: 10px;
 }
