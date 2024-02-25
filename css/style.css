@@ -418,7 +418,6 @@ input[type="number"] {
   padding: 5px 5px 10px 5px;
 }
 
-
 .myProfile {
   padding-bottom: 60px;
 }
@@ -649,8 +648,12 @@ datalist {
   text-align: center;
   font-size: 13px;
   line-height: 35px;
-  width: 45%;
+  width: 48%;
   position: relative;
+}
+
+.featured-aqars .feat .my-ad .verify {
+  width: 30%;
 }
 
 .featured-aqars .feat .unactive {
@@ -695,7 +698,8 @@ datalist {
   color: #f44336;
 }
 
-.featured-aqars .feat .photo .ad-feat a {
+.featured-aqars .feat .photo .ad-feat a,
+.featured-aqars .feat .photo .ad-feat .licence {
   display: block;
   border: 0.5px solid #ff881b;
   border-radius: 5px;
@@ -733,7 +737,7 @@ datalist {
   word-break: break-all;
 }
 
-.featured-aqars .feat .info .heart {
+.featured-aqars .feat .heart {
   box-shadow: 0px 3px 6px #00000029;
   width: 24px;
   height: 24px;
@@ -742,8 +746,8 @@ datalist {
   border: 0px;
   background-color: #fff;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 10px;
+  left: 10px;
 }
 
 .featured-aqars .feat .info .heart .svg-inline--fa {
@@ -752,7 +756,8 @@ datalist {
 
 .featured-aqars .feat .info {}
 
-.featured-aqars .feat .info .more a {
+.featured-aqars .feat .info .more a,
+.featured-aqars .feat .info .more .licence {
   border: 0.5px solid #262f6a;
   border-radius: 5px;
   background-color: #262f6a17;
@@ -1022,7 +1027,7 @@ datalist {
 }
 
 .register .parent .fill-data .enroll {
-  margin: 50px 100px 40px 40px;
+  margin: 50px 60px 40px 40px;
 }
 
 .register .parent .fill-data .enroll .nav-pills {
@@ -1061,7 +1066,7 @@ datalist {
 .login-form .svg-inline--fa,
 .register .first .svg-inline--fa {
   position: absolute;
-  bottom: 3rem;
+  bottom: 2rem;
   right: 15px;
   color: var(--primary-color);
   font-size: 16px;
@@ -1144,7 +1149,8 @@ datalist {
   color: var(--primary-color);
 }
 
-.register .parent .fill-data input[type="submit"] {
+.register .parent .fill-data input[type="submit"],
+.register .parent .fill-data button[type="button"] {
   background-color: var(--primary-color);
   border: 1px solid var(--primary-color);
   color: #fff;
@@ -1176,7 +1182,7 @@ datalist {
   left: 30px;
   color: #000;
   font-size: 19px;
-  bottom: 2rem;
+  bottom: 1rem;
 }
 
 #phone-form .first .country,
@@ -4375,7 +4381,7 @@ a:hover {
   background-color: #fff;
 }
 
-.estate-finance .error-message {
+.error-message {
   color: red;
 }
 
@@ -4690,7 +4696,7 @@ input[type="email"] {
   padding: 10px 15px 10px 15px;
 }
 
-.myProfile .featured-aqars .feat .parent .info .more .dropdown-menu a {
+.myProfile .featured-aqars .feat .info .more .dropdown-menu a {
   border: 0px;
   background-color: transparent;
   text-align: right;
@@ -4698,11 +4704,11 @@ input[type="email"] {
   margin-top: 0px;
 }
 
-.myProfile .featured-aqars .feat .parent .dropdown-toggle::after {
+.myProfile .featured-aqars .feat .dropdown-toggle::after {
   display: none;
 }
 
-.featured-aqars .feat .parent .info .more .dropdown a {
+.featured-aqars .feat .info .more .dropdown a {
   color: var(--primary-color);
   padding: 0px;
 }
@@ -5443,7 +5449,7 @@ input[type="email"] {
 }
 
 .myProfile .addAccount .first input {
-  border: 0.5px solid #D3D1D1;
+  border: 0.5px solid #d3d1d1;
   border-radius: 8px;
   height: 60px;
   padding-right: 40px;
@@ -5487,11 +5493,11 @@ input[type="email"] {
   border-radius: 8px;
   height: 60px;
   border: 1px solid var(--primary-color);
-  transition: all .3s ease-in-out;
-  -webkit-transition: all .3s ease-in-out;
-  -moz-transition: all .3s ease-in-out;
-  -ms-transition: all .3s ease-in-out;
-  -o-transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   margin-top: 50px;
 }
 
@@ -5533,4 +5539,38 @@ input[type="email"] {
 .myProfile .accountBranch .parent .account-links a {
   display: block;
   margin-bottom: 10px;
+<<<<<<< HEAD:css/style.css
 }
+.register-new h2 {
+  font-size: 18px;
+}
+.register-new p {
+  color: #707070;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+.register-new .choise {
+  background: #ffffff17 0% 0% no-repeat padding-box;
+  border: 0.20000000298023224px solid #000000;
+  border-radius: 10px;
+  height: 70px;
+  margin-bottom: 20px;
+  padding: 24px;
+}
+.register-new .choise input {
+  height: auto;
+}
+.register-new .choise label {
+  padding-right: 15px;
+}
+.register-new .parent .fill-data button[type="button"] {
+  border-radius: 15px;
+  height: 70px;
+  width: 100%;
+}
+.register-new .first .country {
+  top: 3rem;
+}
+=======
+}
+>>>>>>> refs/remotes/main/master:aqaritkom-master/css/style.css

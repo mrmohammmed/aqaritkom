@@ -1,0 +1,858 @@
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--custom fremeworks -->
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/sal.css" />
+    <link rel="stylesheet" href="css/hover.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <title>Home</title>
+  </head>
+
+  <body>
+    <!--start of top-header -->
+    <header>
+      <!--start of top-header -->
+      <div class="top-header">
+        <p>المنصة الحصرية للعقارات في المملكة</p>
+      </div>
+      <!--end of top-header -->
+      <!--start of navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light shadow-navbar">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="images/logo.png" /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#navbarSupportedContent"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="offcanvas offcanvas-top" id="navbarSupportedContent">
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                  الرئيسيه
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">البحث</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle help-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  المساعدة
+                </a>
+                <ul class="dropdown-menu help" aria-labelledby="navbarDropdown">
+                  <li>
+                    <p>للاستعلامات والاستفسارات</p>
+                    <a href="tel:9200412547">
+                      9200412547 &nbsp;
+                      <img src="images/icons/phone-call (4).svg" />
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <div class="actions">
+              <ul class="d-flex">
+                <li class="download dropdown">
+                  <a
+                    href="#"
+                    class="link-style-small dropdown-toggle"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <span>
+                      <i class="fa-solid fa-download"></i>
+                      حمل التطبيق
+                    </span>
+                  </a>
+                  <ul
+                    class="dropdown-menu download-app"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <li>
+                      <p>متوفر علي المتاجر</p>
+                      <ul>
+                        <li>
+                          <a href="#"><img src="images/PlayStore.svg" /></a>
+                        </li>
+                        <li>
+                          <a href="#"><img src="images/AppStore.svg" /></a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="add">
+                  <a href="#" class="link-style-small">
+                    <span>
+                      <i class="fa-solid fa-house-chimney"></i>
+                      إضافة عقار
+                    </span>
+                  </a>
+                </li>
+                <li class="login">
+                  <a href="#" class="link-style-small">
+                    <span>
+                      <i class="fa-regular fa-user"></i>
+                      تسجيل الدخول
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!--end of navbar -->
+    </header>
+    <!-- end of top-header -->
+
+    <section class="register register-new">
+      <div class="parent d-flex">
+        <div class="fill-data">
+          <div class="enroll">
+            <h2>اختر نوع الحساب</h2>
+            <p>اختر نوع حسابك لدي منصات عقاراتكم</p>
+            <form id="wizard-form">
+              <div class="form-step" id="step1">
+                <div class="choise">
+                  <input
+                    type="radio"
+                    name="choice"
+                    id="client"
+                    value="option1"
+                    checked
+                  />
+                  <label for="client">باحث عن عقار</label>
+                </div>
+                <div class="choise">
+                  <input
+                    type="radio"
+                    name="choice"
+                    id="owner"
+                    value="option2"
+                  />
+                  <label for="owner">مالك عقار</label>
+                </div>
+                <div class="choise">
+                  <input
+                    type="radio"
+                    name="choice"
+                    id="marketer"
+                    value="option3"
+                  />
+                  <label for="marketer">مسوق عقاري</label>
+                </div>
+                <div class="choise">
+                  <input
+                    type="radio"
+                    name="choice"
+                    id="company"
+                    value="option4"
+                  />
+                  <label for="company">شركة عقارية</label>
+                </div>
+
+                <button type="button" onclick="nextStep()">التالي</button>
+              </div>
+
+              <div class="form-step" id="step2">
+                <div id="option1-fields" style="display: none">
+                  <!-- Option 1 fields -->
+                  <div class="first">
+                    <label for="fullname">الاسم الكامل</label>
+                    <input
+                      type="text"
+                      placeholder="محمد أحمد"
+                      id="fullname"
+                      name="fullname"
+                      class="form-control"
+                    />
+                    <i class="fa-regular fa-user"></i>
+                  </div>
+                  <div class="first">
+                    <label for="phone">رقم الجوال</label>
+                    <input
+                      type="tel"
+                      placeholder="521365478"
+                      id="phone"
+                      name="phone"
+                      class="form-control"
+                    />
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <p class="country">
+                      +966
+                      <img src="images/flag.png" />
+                    </p>
+                  </div>
+                  <div class="first">
+                    <label for="email">البريد الإلكتروني</label>
+                    <input
+                      type="email"
+                      placeholder="mohamed@gmail.com"
+                      id="email"
+                      name="email"
+                      class="form-control"
+                    />
+                    <i class="fa-regular fa-envelope"></i>
+                  </div>
+                  <div class="first">
+                    <label for="inputpass">كلمة المرور</label>
+                    <input
+                      type="password"
+                      placeholder="***********"
+                      id="inputpass"
+                      name="pass"
+                      class="form-control"
+                    />
+                    <i class="fa-solid fa-lock"></i>
+                    <div class="showEl" onclick="myFunction()">
+                      <i class="fa-regular fa-eye-slash"></i>
+                    </div>
+                  </div>
+                  <div class="first">
+                    <label for="confirmpass">تأكيد كلمة المرور</label>
+                    <input
+                      type="password"
+                      placeholder="***********"
+                      id="confirmpass"
+                      name="confirm"
+                      class="form-control"
+                    />
+                    <i class="fa-solid fa-lock"></i>
+                    <div class="showEl" onclick="myFunction2()">
+                      <i class="fa-regular fa-eye-slash"></i>
+                    </div>
+                  </div>
+                </div>
+                <div id="option2-fields" style="display: none">
+                  <!-- Option 2 fields -->
+                  <div class="first">
+                    <label for="fullname">الاسم الكامل</label>
+                    <input
+                      type="text"
+                      placeholder="محمد أحمد"
+                      id="fullname"
+                      name="fullname"
+                      class="form-control"
+                    />
+                    <i class="fa-regular fa-user"></i>
+                  </div>
+                  <div class="first">
+                    <label for="phone">رقم الجوال</label>
+                    <input
+                      type="tel"
+                      placeholder="521365478"
+                      id="phone"
+                      name="phone"
+                      class="form-control"
+                    />
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <p class="country">
+                      +966
+                      <img src="images/flag.png" />
+                    </p>
+                  </div>
+                  <div class="first">
+                    <label for="email">البريد الإلكتروني</label>
+                    <input
+                      type="email"
+                      placeholder="mohamed@gmail.com"
+                      id="email"
+                      name="email"
+                      class="form-control"
+                    />
+                    <i class="fa-regular fa-envelope"></i>
+                  </div>
+                  <div class="first">
+                    <label for="inputpass">كلمة المرور</label>
+                    <input
+                      type="password"
+                      placeholder="***********"
+                      id="inputpass"
+                      name="pass"
+                      class="form-control"
+                    />
+                    <i class="fa-solid fa-lock"></i>
+                    <div class="showEl" onclick="myFunction()">
+                      <i class="fa-regular fa-eye-slash"></i>
+                    </div>
+                  </div>
+                  <div class="first">
+                    <label for="confirmpass">تأكيد كلمة المرور</label>
+                    <input
+                      type="password"
+                      placeholder="***********"
+                      id="confirmpass"
+                      name="confirm"
+                      class="form-control"
+                    />
+                    <i class="fa-solid fa-lock"></i>
+                    <div class="showEl" onclick="myFunction2()">
+                      <i class="fa-regular fa-eye-slash"></i>
+                    </div>
+                  </div>
+                </div>
+                <div id="option3-fields" style="display: none">
+                  <!-- Option 3 fields -->
+                  <label>
+                    Field 4:
+                    <input type="text" name="field4_option3" />
+                  </label>
+                  <label>
+                    Field 5:
+                    <input type="text" name="field5_option3" />
+                  </label>
+                </div>
+                <button type="button" onclick="previousStep()">Previous</button>
+                <button type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="image">
+          <img src="images/agent.png" />
+          <div class="overlay"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="register">
+      <div class="parent d-flex">
+        <div class="fill-data">
+          <div class="enroll">
+            <ul class="nav nav-pills d-flex" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="pills-person-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-person"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-person"
+                  aria-selected="true"
+                >
+                  فرد
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-marketer-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-marketer"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-marketer"
+                  aria-selected="false"
+                >
+                  مسوق عقاري
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-company-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-company"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-company"
+                  aria-selected="false"
+                >
+                  شركة
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="pills-person"
+                role="tabpanel"
+                aria-labelledby="pills-person-tab"
+              >
+                <form method="post" action="">
+                  <div class="first">
+                    <label for="fullname">الاسم الكامل</label>
+                    <input
+                      type="text"
+                      placeholder="محمد أحمد"
+                      id="fullname"
+                      name="fullname"
+                      class="form-control"
+                    />
+                    <i class="fa-regular fa-user"></i>
+                  </div>
+                  <div class="first">
+                    <label for="phone">رقم الجوال</label>
+                    <input
+                      type="tel"
+                      placeholder="521365478"
+                      id="phone"
+                      name="phone"
+                      class="form-control"
+                    />
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <p class="country">
+                      +966
+                      <img src="images/flag.png" />
+                    </p>
+                  </div>
+                  <div class="first">
+                    <label for="email">البريد الإلكتروني</label>
+                    <input
+                      type="email"
+                      placeholder="mohamed@gmail.com"
+                      id="email"
+                      name="email"
+                      class="form-control"
+                    />
+                    <i class="fa-regular fa-envelope"></i>
+                  </div>
+                  <div class="first">
+                    <label for="inputpass">كلمة المرور</label>
+                    <input
+                      type="password"
+                      placeholder="***********"
+                      id="inputpass"
+                      name="pass"
+                      class="form-control"
+                    />
+                    <i class="fa-solid fa-lock"></i>
+                    <div class="showEl" onclick="myFunction()">
+                      <i class="fa-regular fa-eye-slash"></i>
+                    </div>
+                  </div>
+                  <div class="first">
+                    <label for="confirmpass">تأكيد كلمة المرور</label>
+                    <input
+                      type="password"
+                      placeholder="***********"
+                      id="confirmpass"
+                      name="confirm"
+                      class="form-control"
+                    />
+                    <i class="fa-solid fa-lock"></i>
+                    <div class="showEl" onclick="myFunction2()">
+                      <i class="fa-regular fa-eye-slash"></i>
+                    </div>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      بتسجل العضوية أنت توافق علي
+                      <a href="#">الشروط والأحكام</a>
+                      و
+                      <a href="#">سياسة الخصوصيه</a>
+                    </label>
+                  </div>
+                  <div class="first">
+                    <input
+                      type="submit"
+                      value="انشاء الحساب"
+                      class="form-control"
+                    />
+                  </div>
+                </form>
+                <p class="haveAccount">
+                  لديك حساب ؟
+                  <a href="#">سجل دخول الان</a>
+                </p>
+              </div>
+
+              <div
+                class="tab-pane fade"
+                id="pills-marketer"
+                role="tabpanel"
+                aria-labelledby="pills-marketer-tab"
+              >
+                <form method="post" action="">
+                  <div class="first">
+                    <label for="fullname">الاسم الكامل</label>
+                    <input
+                      type="text"
+                      placeholder="محمد أحمد"
+                      id="fullname"
+                      name="fullname"
+                      class="form-control"
+                    />
+                    <i class="fa-regular fa-user"></i>
+                  </div>
+                  <div class="first">
+                    <label for="phone">رقم الجوال</label>
+                    <input
+                      type="tel"
+                      placeholder="521365478"
+                      id="phone"
+                      name="phone"
+                      class="form-control"
+                    />
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <p class="country">
+                      +966
+                      <img src="images/flag.png" />
+                    </p>
+                  </div>
+                  <div class="first">
+                    <label for="advertise">رقم المعلن</label>
+                    <input
+                      type="tel"
+                      placeholder="25145879"
+                      id="advertise"
+                      name="advertise"
+                      class="form-control"
+                    />
+                    <img src="images/icons/megaphone.png" class="mice" />
+                  </div>
+                  <div class="first">
+                    <label for="email">البريد الإلكتروني</label>
+                    <input
+                      type="email"
+                      placeholder="mohamed@gmail.com"
+                      id="email"
+                      name="email"
+                      class="form-control"
+                    />
+                    <i class="fa-regular fa-envelope"></i>
+                  </div>
+                  <div class="first">
+                    <label for="inputpass">كلمة المرور</label>
+                    <input
+                      type="password"
+                      placeholder="***********"
+                      id="inputpass"
+                      name="pass"
+                      class="form-control"
+                    />
+                    <i class="fa-solid fa-lock"></i>
+                    <div class="showEl" onclick="myFunction()">
+                      <i class="fa-regular fa-eye-slash"></i>
+                    </div>
+                  </div>
+                  <div class="first">
+                    <label for="confirmpass">تأكيد كلمة المرور</label>
+                    <input
+                      type="password"
+                      placeholder="***********"
+                      id="confirmpass"
+                      name="confirm"
+                      class="form-control"
+                    />
+                    <i class="fa-solid fa-lock"></i>
+                    <div class="showEl" onclick="myFunction2()">
+                      <i class="fa-regular fa-eye-slash"></i>
+                    </div>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      بتسجل العضوية أنت توافق علي
+                      <a href="#">الشروط والأحكام</a>
+                      و
+                      <a href="#">سياسة الخصوصيه</a>
+                    </label>
+                  </div>
+                  <div class="first">
+                    <input
+                      type="submit"
+                      value="انشاء الحساب"
+                      class="form-control"
+                    />
+                  </div>
+                </form>
+                <p class="haveAccount">
+                  لديك حساب ؟
+                  <a href="#">سجل دخول الان</a>
+                </p>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-company"
+                role="tabpanel"
+                aria-labelledby="pills-company-tab"
+              >
+                <form method="post" action="">
+                  <div class="first">
+                    <label for="fullname">الاسم الكامل</label>
+                    <input
+                      type="text"
+                      placeholder="محمد أحمد"
+                      id="fullname"
+                      name="fullname"
+                      class="form-control"
+                    />
+                    <i class="fa-regular fa-user"></i>
+                  </div>
+                  <div class="first">
+                    <label for="phone">رقم الجوال</label>
+                    <input
+                      type="tel"
+                      placeholder="521365478"
+                      id="phone"
+                      name="phone"
+                      class="form-control"
+                    />
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <p class="country">
+                      +966
+                      <img src="images/flag.png" />
+                    </p>
+                  </div>
+                  <div class="first">
+                    <label for="advertise">رقم السجل التجارى</label>
+                    <input
+                      type="tel"
+                      placeholder="25145879"
+                      id="advertise"
+                      name="advertise"
+                      class="form-control"
+                    />
+                    <i class="fa-regular fa-file"></i>
+                  </div>
+                  <div class="first">
+                    <label for="email">البريد الإلكتروني</label>
+                    <input
+                      type="email"
+                      placeholder="mohamed@gmail.com"
+                      id="email"
+                      name="email"
+                      class="form-control"
+                    />
+                    <i class="fa-regular fa-envelope"></i>
+                  </div>
+                  <div class="first">
+                    <label for="inputpass">كلمة المرور</label>
+                    <input
+                      type="password"
+                      placeholder="***********"
+                      id="inputpass"
+                      name="pass"
+                      class="form-control"
+                    />
+                    <i class="fa-solid fa-lock"></i>
+                    <div class="showEl" onclick="myFunction()">
+                      <i class="fa-regular fa-eye-slash"></i>
+                    </div>
+                  </div>
+                  <div class="first">
+                    <label for="confirmpass">تأكيد كلمة المرور</label>
+                    <input
+                      type="password"
+                      placeholder="***********"
+                      id="confirmpass"
+                      name="confirm"
+                      class="form-control"
+                    />
+                    <i class="fa-solid fa-lock"></i>
+                    <div class="showEl" onclick="myFunction2()">
+                      <i class="fa-regular fa-eye-slash"></i>
+                    </div>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      بتسجل العضوية أنت توافق علي
+                      <a href="#">الشروط والأحكام</a>
+                      و
+                      <a href="#">سياسة الخصوصيه</a>
+                    </label>
+                  </div>
+                  <div class="first">
+                    <input
+                      type="submit"
+                      value="انشاء الحساب"
+                      class="form-control"
+                    />
+                  </div>
+                </form>
+                <p class="haveAccount">
+                  لديك حساب ؟
+                  <a href="#">سجل دخول الان</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="image">
+          <img src="images/agent.png" />
+          <div class="overlay"></div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function nextStep() {
+        const currentStep = document.querySelector(
+          '.form-step:not([style*="display: none"])'
+        );
+        const nextStep = currentStep.nextElementSibling;
+        currentStep.style.display = "none";
+        nextStep.style.display = "block";
+        showOptionFields();
+      }
+
+      function previousStep() {
+        const currentStep = document.querySelector(
+          '.form-step:not([style*="display: none"])'
+        );
+        const previousStep = currentStep.previousElementSibling;
+        currentStep.style.display = "none";
+        previousStep.style.display = "block";
+        showOptionFields();
+      }
+
+      function showOptionFields() {
+        const choice = document.querySelector(
+          'input[name="choice"]:checked'
+        ).value;
+        const option1Fields = document.getElementById("option1-fields");
+        const option2Fields = document.getElementById("option2-fields");
+        const option3Fields = document.getElementById("option3-fields");
+
+        option1Fields.style.display = "none";
+        option2Fields.style.display = "none";
+        option3Fields.style.display = "none";
+
+        if (choice === "option1") {
+          option1Fields.style.display = "block";
+        } else if (choice === "option2") {
+          option2Fields.style.display = "block";
+        } else if (choice === "option3") {
+          option3Fields.style.display = "block";
+        }
+      }
+    </script>
+
+    <!--start of footer -->
+    <footer>
+      <!--start of top-footer -->
+      <div class="top-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="log-footer">
+                <div class="logo">
+                  <img src="images/logo-footer.png" />
+                </div>
+                <div class="headquater">
+                  <img src="images/rega-optimized.png" />
+                  <p>مرخصة من الهيئة العامة للعقار</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="links">
+                <h2>روابط سريعة</h2>
+                <ul>
+                  <li><a href="#">عقارات للبيع</a></li>
+                  <li><a href="#">عقارات للإيجار</a></li>
+                  <li><a href="#">الشركات العقارية</a></li>
+                  <li><a href="#">المسوقين العقارين</a></li>
+                  <li><a href="#">الباقات والإشتراكات</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="links">
+                <h2>روابط مهمة</h2>
+                <ul>
+                  <li><a href="#">من نحن</a></li>
+                  <li><a href="#">الشكاوي والمقترحات</a></li>
+                  <li><a href="#">سياسة الخصوصية</a></li>
+                  <li><a href="#">حقوق الملكية</a></li>
+                  <li><a href="#">الشروط والأحكام</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="social">
+                <h2>تابعنا علي</h2>
+                <ul class="d-flex">
+                  <li>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                  </li>
+                </ul>
+                <div class="number">
+                  <h3>الرقم الموحد</h3>
+                  <p>
+                    <a href="tel:9200412547">
+                      <i class="fa-solid fa-phone-volume"></i>
+                      <span>9200412547</span>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of top-footer -->
+      <!--start of bottom-footer -->
+      <div class="bottom-footer">
+        <h2>جميع الحقوق محفوظة لعقارتكم @2022</h2>
+      </div>
+    </footer>
+    <!-- end of bottom-footer -->
+    <!-- end of footer -->
+    <!--framework js -->
+    <!--framework js -->
+    <script src="js/jquery.js "></script>
+    <script src="js/bootstrap.bundle.min.js "></script>
+    <script src="js/all.min.js "></script>
+    <script src="js/sal.js"></script>
+    <script src="js/main.js "></script>
+  </body>
+</html>
