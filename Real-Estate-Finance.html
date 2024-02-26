@@ -1,0 +1,416 @@
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--custom fremeworks -->
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <!-- Select2 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <title>aqar-compainies</title>
+</head>
+
+<body>
+    <!--start of top-header -->
+    <header>
+        <!--start of top-header -->
+        <div class="top-header">
+            <p>المنصة الحصرية للعقارات في المملكة</p>
+        </div>
+        <!--end of top-header -->
+        <!--start of navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light shadow-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="images/logo.png" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#navbarSupportedContent">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="offcanvas offcanvas-top" id="navbarSupportedContent">
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                الرئيسيه
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">البحث</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle help-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                المساعدة
+                            </a>
+                            <ul class="dropdown-menu help" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <p>للاستعلامات والاستفسارات</p>
+                                    <a href="tel:9200412547">
+                                        9200412547
+                                        &nbsp;
+                                        <img src="images/icons/phone-call (4).svg">
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="actions">
+                        <ul class="d-flex">
+                            <li class="download dropdown">
+                                <a href="#" class="link-style-small dropdown-toggle" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span>
+                                        <i class="fa-solid fa-download"></i>
+                                        حمل التطبيق
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu download-app" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <p>متوفر علي المتاجر</p>
+                                        <ul>
+                                            <li>
+                                                <a href="#"><img src="images/PlayStore.svg"></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="images/AppStore.svg"></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="add">
+                                <a href="#" class="link-style-small">
+                                    <span>
+                                        <i class="fa-solid fa-house-chimney"></i>
+                                        إضافة عقار
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="login">
+                                <a href="#" class="link-style-small">
+                                    <span>
+                                        <i class="fa-regular fa-user"></i>
+                                        تسجيل الدخول
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--end of navbar -->
+    </header>
+    <!-- end of top-header -->
+
+    <section class="breadcramp">
+        <div class="container">
+            <ul class="d-flex">
+                <li>
+                    <a href="#">الرئسية</a>
+                </li>
+                <span>></span>
+                &nbsp;
+                <li>التمويل العقاري</li>
+            </ul>
+        </div>
+    </section>
+    <section class="estate-finance">
+        <div class="container">
+            <form method="post" action="" onsubmit="return validateForm()">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="first">
+                            <label>الإسم بالكامل</label>
+                            <input type="text" id="fullname" placeholder="اكتب الإسم بالكامل هنا" class="form-control">
+                            <span id="fullNameError" class="error-message"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="first">
+                            <label>العمر</label>
+                            <select id="theAge" class="js-states" style="width: 100% !important;">
+                                <option></option>
+                                <option>20</option>
+                                <option>30</option>
+                            </select>
+                            <span id="ageError" class="error-message"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="first">
+                            <label>الجنس</label>
+                            <select id="theGender" class="js-states" style="width: 100% !important;">
+                                <option></option>
+                                <option>ذكر</option>
+                                <option>أنثى</option>
+
+                            </select>
+                            <span id="genderError" class="error-message"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="first">
+                            <label>نوع القطاع</label>
+                            <select id="theSector" class="js-states" style="width: 100% !important;">
+                                <option></option>
+                                <option>سكنى</option>
+                                <option>ادارى</option>
+
+                            </select>
+                            <span id="sectorError" class="error-message"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="first">
+                            <label>رقم الهويه</label>
+                            <input type="text" id="idNumber" placeholder="الرجاء كتابة رقم الهوية" class="form-control">
+                            <span id="idError" class="error-message"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="first">
+                            <label>البنك المحول عليه الراتب</label>
+                            <select id="theBank" class="js-states" style="width: 100% !important;">
+                                <option></option>
+                                <option>بنك مصر</option>
+                                <option>البنك الاهلى</option>
+
+                            </select>
+                            <span id="bankError" class="error-message"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="first">
+                            <label>رقم الجوال</label>
+                            <input type="text" id="phone" placeholder="الرجاء كتابة رقم الجوال" class="form-control">
+                            <span id="phoneError" class="error-message"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="first">
+                            <label>الراتب الشهري</label>
+                            <select id="theSalary" class="js-states" style="width: 100% !important;">
+                                <option></option>
+                                <option>1000</option>
+                                <option>2000</option>
+
+                            </select>
+                            <span id="salaryError" class="error-message"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="first">
+                            <label>البريد الإلكتروني</label>
+                            <input type="email" id="email" placeholder="الرجاء كتابة البردي الإلكتروني"
+                                class="form-control">
+                            <span id="emailError" class="error-message"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="first">
+                            <label>المنطقة</label>
+                            <select id="theArea" class="js-states" style="width: 100% !important;">
+                                <option></option>
+                                <option>الرياض</option>
+                                <option>الدمام</option>
+
+                            </select>
+                            <span id="areaError" class="error-message"></span>
+                        </div>
+                    </div>
+                    <button type="submit" class="link-style-small">
+                        <span>تقديم طلب</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!--start of footer -->
+
+    <script>
+        function validateForm() {
+            var fullName = document.getElementById("fullname").value;
+            var fullNameError = document.getElementById("fullNameError");
+            var age = document.getElementById("theAge").value;
+            var ageError = document.getElementById("ageError");
+            var gender = document.getElementById("theGender").value;
+            var genderError = document.getElementById("genderError");
+            var sector = document.getElementById("theSector").value;
+            var sectorError = document.getElementById("sectorError");
+            var idNum = document.getElementById("idNumber").value;
+            var idError = document.getElementById("idError");
+            var bank = document.getElementById("theBank").value;
+            var bankError = document.getElementById("bankError");
+            var phone = document.getElementById("phone").value;
+            var phoneError = document.getElementById("phoneError");
+            var salary = document.getElementById("theSalary").value;
+            var salaryError = document.getElementById("salaryError");
+            var email = document.getElementById("email").value;
+            var emailError = document.getElementById("emailError");
+            var area = document.getElementById("theArea").value;
+            var areaError = document.getElementById("areaError");
+
+            fullNameError.style.display = "none";
+            ageError.style.display = "none";
+            genderError.style.display = "none";
+            sectorError.style.display = 'none';
+            idError.style.display = "none";
+            bankError.style.display = "none";
+            phoneError.style.display = "none";
+            salaryError.style.display = "none";
+            emailError.style.display = "none";
+            if (fullName === "") {
+                fullNameError.textContent = "الرجاء إدخال الاسم بالكامل";
+                fullNameError.style.display = "block";
+                return false;
+            }
+            if (age === "") {
+                ageError.textContent = "الرجاء تحديد العمر";
+                ageError.style.display = "block";
+                return false;
+            }
+            if (gender === "") {
+                genderError.textContent = "الرجاء تحديد النوع";
+                genderError.style.display = "block";
+                return false;
+            }
+            if (sector === "") {
+                sectorError.textContent = "الرجاء تحديد نوع القطاع";
+                sectorError.style.display = "block";
+                return false;
+            }
+            if (idNum === "") {
+                idError.textContent = "الرجاء تحديد رقم الهويه";
+                idError.style.display = "block";
+                return false;
+            }
+            if (bank === "") {
+                bankError.textContent = "الرجاء اختيار البنك";
+                bankError.style.display = "block";
+                return false;
+            }
+            if (phone === "") {
+                phoneError.textContent = "الرجاء كتابة رقم الجوال";
+                phoneError.style.display = "block";
+                return false;
+            }
+
+            if (salary === "") {
+                salaryError.textContent = "الرجاء اختيار الراتب الشهرى";
+                salaryError.style.display = "block";
+                return false;
+            }
+            if (email === "") {
+                emailError.textContent = "الرجاء كتابة البريد الالكترونى";
+                emailError.style.display = "block";
+                return false;
+            }
+            if (!email.includes("@")) {
+                emailError.textContent = "يجب أن يحتوي البريد الإلكتروني على علامة @";
+                emailError.style.display = "block";
+                return false;
+            }
+            if (area === "") {
+                areaError.textContent = "الرجاء اختيار المنطقه";
+                areaError.style.display = "block";
+                return false;
+            }
+            return true
+        }
+    </script>
+    <!--start of footer -->
+    <footer>
+        <!--start of top-footer -->
+        <div class="top-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="log-footer">
+                            <div class="logo">
+                                <img src="images/logo-footer.svg">
+                            </div>
+                            <div class="headquater">
+                                <img src="images/rega-optimized.png">
+                                <p>مرخصة من الهيئة العامة للعقار</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="links">
+                            <h2>روابط سريعة</h2>
+                            <ul>
+                                <li><a href="#">عقارات للبيع</a></li>
+                                <li><a href="#">عقارات للإيجار</a></li>
+                                <li><a href="#">الشركات العقارية</a></li>
+                                <li><a href="#">المسوقين العقارين</a></li>
+                                <li><a href="#">الباقات والإشتراكات</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="links">
+                            <h2>روابط مهمة</h2>
+                            <ul>
+                                <li><a href="#">من نحن</a></li>
+                                <li><a href="#">الشكاوي والمقترحات</a></li>
+                                <li><a href="#">سياسة الخصوصية</a></li>
+                                <li><a href="#">حقوق الملكية</a></li>
+                                <li><a href="#">الشروط والأحكام</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="social">
+                            <h2>تابعنا علي</h2>
+                            <ul class="d-flex">
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            </ul>
+                            <div class="number">
+                                <h3>الرقم الموحد</h3>
+                                <p>
+                                    <a href="tel:9200412547">
+                                        <i class="fa-solid fa-phone-volume"></i>
+                                        <span>9200412547</span>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of top-footer -->
+        <!--start of bottom-footer -->
+        <div class="bottom-footer">
+            <h2>جميع الحقوق محفوظة لعقارتكم @2022</h2>
+        </div>
+    </footer>
+    <!-- end of bottom-footer -->
+    <!-- end of footer -->
+    <!--framework js -->
+    <script src="js/jquery.js "></script>
+    <script src="js/bootstrap.bundle.min.js "></script>
+    <script src="js/all.min.js "></script>
+    <script src="js/owl.carousel.min.js "></script>
+    <script src="js/wow.min.js "></script>
+    <!-- Select2 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <script src="js/main.js "></script>
+</body>
+
+</html>
