@@ -162,21 +162,25 @@
                       <label>رقم الصك/السجل العيني</label>
                       <input type="number" class="form-control" id="national-id" placeholder="الرجاء كتابة رقم الصك"
                         required min="0">
+                      <span id="nation-error" class="error-message"></span>
                     </div>
                     <div class="first">
                       <label>رقم جوال المالك</label>
-                      <input type="number" class="form-control" id="license-number" placeholder="رقم جوال مالك العقار"
+                      <input type="number" class="form-control" id="phone-number" placeholder="رقم جوال مالك العقار"
                         required min="0">
+                      <span id="phone-error" class="error-message"></span>
                     </div>
                     <div class="first">
                       <label>رقم هوية المالك</label>
                       <input type="number" class="form-control" id="license-number" placeholder="رقم هوية المالك"
                         required min="0">
+                      <span id="license-error" class="error-message"></span>
                     </div>
                     <div class="first">
                       <label>تاريخ ميلاد المالك</label>
 
                       <input type="text" id="hajriDateInput" class="form-control" placeholder="تاريخ الميلاد بالهجري">
+                      <span id="hajr-error" class="error-message"></span>
                     </div>
 
                   </div>
@@ -238,7 +242,7 @@
 
                   </div>
                 </div>
-
+              </form>
             </div>
 
           </div>
@@ -248,12 +252,61 @@
           <button type="submit" data-bs-toggle="modal" data-bs-target="#continueing" class="continue"
             onclick="return validateForm()">استمرار</button>
           <div class="clear"></div>
-          </form>
+
         </div>
 
       </div>
     </div>
   </section>
+  <script>
+    function validateForm() {
+      // Get the input values
+      var nationalId = document.getElementById("national-id").value;
+      var phoneId = document.getElementById("phone-number").value;
+      var licenseNumber = document.getElementById("license-number").value;
+      var hajriDateInput = document.getElementById("hajriDateInput").value;
+      var hajriDateInput2 = document.getElementById("hajriDateInput2").value;
+      var hajriDateInput3 = document.getElementById("hajriDateInput3").value;
+      var nationError = document.getElementById('nation-error');
+      var phoneError = document.getElementById('phone-error');
+      var licenseError = document.getElementById('license-error');
+      var hajrError = document.getElementById('hajr-error');
+      nationError.textContent = '';
+      phoneError.textContent = '';
+      licenseError.textContent = '';
+      hajrError.textContent = '';
+
+
+
+
+      // Perform validation
+      if (nationalId === "") {
+        nationError.textContent = "يرجى إدخال رقم الصك/السجل العيني";
+        return false;
+      }
+      if (phoneId === "") {
+
+        phoneError.textContent = "يرجى ادخال رقم الهاتف";
+        return false;
+      }
+
+      if (licenseNumber === "") {
+
+        licenseError.textContent = 'يرجى ادخال رقم هوية المالك';
+        return false;
+      }
+
+      if (hajriDateInput === "") {
+        hajrError.textContent = "يرجى إدخال تاريخ ميلاد المالك";
+        return false;
+      }
+
+      // Additional validations for other fields
+
+      // If all validations pass, return true to submit the form
+      return true;
+    }
+  </script>
 
   <!-- Modal upgrading package -->
   <div class="modal fade" id="continueing" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
