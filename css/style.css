@@ -2924,23 +2924,23 @@ datalist {
 }
 
 .theAqarDetails .aqarperiod ul {
-  flex-wrap: wrap;
+  flex-wrap: no-wrap;
 }
 
 .theAqarDetails .aqarperiod ul li {
   border: 0.25px solid #262f6a;
   border-radius: 6px;
-  width: 105px;
+  width: 100%;
   height: 28px;
   text-align: center;
   font-size: 16px;
   line-height: 28px;
   margin-right: 10px;
   margin-bottom: 15px;
+  color: var(--primary-color);
 }
 
-.theAqarDetails .aqarperiod ul li:first-of-type,
-.theAqarDetails .aqarperiod ul li:last-of-type {
+.theAqarDetails .aqarperiod ul li:first-of-type {
   margin-right: 0px;
 }
 
@@ -5539,7 +5539,7 @@ input[type="email"] {
 .myProfile .accountBranch .parent .account-links a {
   display: block;
   margin-bottom: 10px;
-  <<<<<<< HEAD: css/style.css
+
 }
 
 .register-new h2 {
@@ -5634,4 +5634,110 @@ input[type="file"] {
 
 .register-new .error-message {
   position: absolute;
+}
+
+.myProfile .addAdsData .transactionLists .nav-item {
+  width: 33%;
+}
+
+.myProfile .addAdsData .Financial-transactions {
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 13px;
+  padding: 20px 30px;
+  margin-top: 30px;
+}
+
+.myProfile .addAdsData .Financial-transactions .parent {
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.myProfile .addAdsData .Financial-transactions .parent h2 {
+  font-size: 16px;
+}
+
+.myProfile .addAdsData .Financial-transactions .parent .discount {
+  color: #F44336;
+}
+
+.myProfile .addAdsData .Financial-transactions .parent .type p {
+  width: 98px;
+  height: 33px;
+  background-color: rgba(0, 186, 0, .09);
+  border-radius: 17px;
+  line-height: 33px;
+  text-align: center;
+  color: #00BA00;
+}
+
+.myProfile .addAdsData .Financial-transactions .parent .type .price {
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+}
+
+.myProfile .addAdsData .Financial-transactions .parent a {
+  color: #FF881B;
+  text-decoration: underline;
+}
+
+.myProfile .addAdsData .Financial-transactions .parent .refused p {
+  width: 118px;
+  background-color: rgba(244, 67, 54, .09);
+  color: #F44336;
+}
+
+.myProfile .addAdsData .Financial-transactions:first-child {
+  margin-top: 0px;
+}
+
+.transactionLists {
+  margin-bottom: 30px;
+}
+
+.myProfile .addAdsData .download-billing {
+  justify-content: space-between;
+  margin: 30px 0px
+}
+
+.myProfile .addAdsData .download-billing a {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+.theAqarDetails .aqarperiod .extraData {
+  margin-bottom: 10px;
+}
+
+.theAqarDetails .aqarperiod .extraData li:first-of-type {
+  background: #0ED6781A 0% 0% no-repeat padding-box;
+  border: 0.5px solid #0ED678;
+  color: #0ED678;
+}
+
+.theAqarDetails .aqarperiod .extraData li:nth-of-type(2) {
+  background: #FF881B3B 0% 0% no-repeat padding-box;
+  border: 0.5px solid #FF881B;
+  border-radius: 6px;
+  color: #FF881B;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.theAqarDetails .aqarperiod .infoAdLicense {
+  padding-top: 15px;
+}
+
+.theAqarDetails .aqarperiod .infoAdLicense h2 {
+  color: var(--primary-color);
+  font-size: 16px;
+}
+
+.theAqarDetails .aqarperiod .infoAdLicense .parent {
+  justify-content: space-between;
 }

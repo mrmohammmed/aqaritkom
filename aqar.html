@@ -1,1015 +1,886 @@
 <html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--custom fremeworks -->
-    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
-    <link rel="stylesheet" href="css/all.min.css" />
-    <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="css/sal.css" />
-    <link rel="stylesheet" href="css/hover.css" />
-    <!-- Select2 CSS -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
-    <title>aqar</title>
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--custom fremeworks -->
+  <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="css/sal.css" />
+  <link rel="stylesheet" href="css/hover.css" />
+  <!-- Select2 CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <title>aqar</title>
+</head>
+
+<body>
+  <!--start of top-header -->
+  <header>
     <!--start of top-header -->
-    <header>
-      <!--start of top-header -->
-      <div class="top-header">
-        <p>المنصة الحصرية للعقارات في المملكة</p>
-      </div>
-      <!--end of top-header -->
-      <!--start of navbar -->
-      <nav class="navbar navbar-expand-lg navbar-light shadow-navbar">
-        <div class="container">
-          <a class="navbar-brand" href="#"><img src="images/logo.png" /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#navbarSupportedContent"
-          >
-            <i class="fa-solid fa-bars"></i>
+    <div class="top-header">
+      <p>المنصة الحصرية للعقارات في المملكة</p>
+    </div>
+    <!--end of top-header -->
+    <!--start of navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="images/logo.png" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#navbarSupportedContent">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="offcanvas offcanvas-top" id="navbarSupportedContent">
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+            <i class="fa-solid fa-xmark"></i>
           </button>
-          <div class="offcanvas offcanvas-top" id="navbarSupportedContent">
-            <button
-              type="button"
-              class="btn-close text-reset"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            >
-              <i class="fa-solid fa-xmark"></i>
-            </button>
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
-                  الرئيسيه
-                </a>
-              </li>
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">
+                الرئيسيه
+              </a>
+            </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="#">البحث</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle help-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  المساعدة
-                </a>
-                <ul class="dropdown-menu help" aria-labelledby="navbarDropdown">
-                  <li>
-                    <p>للاستعلامات والاستفسارات</p>
-                    <a href="tel:9200412547">
-                      9200412547 &nbsp;
-                      <img src="images/icons/phone-call (4).svg" />
-                    </a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            <div class="actions">
-              <ul class="d-flex">
-                <li class="download dropdown">
-                  <a
-                    href="#"
-                    class="link-style-small dropdown-toggle"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <span>
-                      <i class="fa-solid fa-download"></i>
-                      حمل التطبيق
-                    </span>
-                  </a>
-                  <ul
-                    class="dropdown-menu download-app"
-                    aria-labelledby="navbarDropdown"
-                  >
-                    <li>
-                      <p>متوفر علي المتاجر</p>
-                      <ul>
-                        <li>
-                          <a href="#"><img src="images/PlayStore.svg" /></a>
-                        </li>
-                        <li>
-                          <a href="#"><img src="images/AppStore.svg" /></a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-
-                <li class="add">
-                  <a href="#" class="link-style-small">
-                    <span>
-                      <i class="fa-solid fa-house-chimney"></i>
-                      إضافة عقار
-                    </span>
-                  </a>
-                </li>
-                <li class="login">
-                  <a href="#" class="link-style-small">
-                    <span>
-                      <i class="fa-regular fa-user"></i>
-                      تسجيل الدخول
-                    </span>
+            <li class="nav-item">
+              <a class="nav-link" href="#">البحث</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle help-toggle" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                المساعدة
+              </a>
+              <ul class="dropdown-menu help" aria-labelledby="navbarDropdown">
+                <li>
+                  <p>للاستعلامات والاستفسارات</p>
+                  <a href="tel:9200412547">
+                    9200412547 &nbsp;
+                    <img src="images/icons/phone-call (4).svg" />
                   </a>
                 </li>
               </ul>
+            </li>
+          </ul>
+          <div class="actions">
+            <ul class="d-flex">
+              <li class="download dropdown">
+                <a href="#" class="link-style-small dropdown-toggle" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <span>
+                    <i class="fa-solid fa-download"></i>
+                    حمل التطبيق
+                  </span>
+                </a>
+                <ul class="dropdown-menu download-app" aria-labelledby="navbarDropdown">
+                  <li>
+                    <p>متوفر علي المتاجر</p>
+                    <ul>
+                      <li>
+                        <a href="#"><img src="images/PlayStore.svg" /></a>
+                      </li>
+                      <li>
+                        <a href="#"><img src="images/AppStore.svg" /></a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="add">
+                <a href="#" class="link-style-small">
+                  <span>
+                    <i class="fa-solid fa-house-chimney"></i>
+                    إضافة عقار
+                  </span>
+                </a>
+              </li>
+              <li class="login">
+                <a href="#" class="link-style-small">
+                  <span>
+                    <i class="fa-regular fa-user"></i>
+                    تسجيل الدخول
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--end of navbar -->
+  </header>
+  <!-- end of top-header -->
+
+  <!-- start of breadcramp-->
+  <div class="breadcramp">
+    <div class="container">
+      <ul class="d-flex">
+        <li>
+          <a href="#">الرئسية</a>
+        </li>
+        >
+
+        <li>
+          <span>فيلا 300 متر مربع واجهة شمالية،غربية</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--end of breadcramp -->
+
+  <!-- start section of mzad-details -->
+  <section class="mzad-details theAqarDetails">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="slider">
+            <div class="owl-carousel owl-theme" id="mzadPhotos">
+              <div class="box">
+                <figure class="photo">
+                  <img src="images/building/Rectangle 835.png" />
+                </figure>
+              </div>
+              <div class="box">
+                <figure class="photo">
+                  <img src="images/building/Rectangle 835.png" />
+                </figure>
+              </div>
+              <div class="box">
+                <figure class="photo">
+                  <img src="images/building/Rectangle 835.png" />
+                </figure>
+              </div>
+              <div class="box">
+                <figure class="photo">
+                  <img src="images/building/Rectangle 835.png" />
+                </figure>
+              </div>
+            </div>
+          </div>
+
+          <div class="description">
+            <p class="title">فيلا للبيع حي النرجس</p>
+            <p class="content">
+              النرجس ، شمال ، الرياض
+              <a href="#">عرض علي الخريطة
+                <i class="fa-solid fa-chevron-left"></i>
+              </a>
+            </p>
+            <p class="title">التفاصيل</p>
+            <p class="content">
+              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد
+              هذا النص من مولد النص العربى
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <ul class="d-flex actions">
+            <li>
+              <button>
+                <i class="fa-regular fa-heart"></i>
+                المفضلة
+              </button>
+            </li>
+            <li>
+              <button>
+                <i class="fa-solid fa-share"></i>
+                مشاركة
+              </button>
+            </li>
+            <li>
+              <button>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+                إبلاع عن العقار
+              </button>
+            </li>
+          </ul>
+          <div class="mzadPeriod aqarperiod">
+            <h2 class="price">
+              1,900,000
+              <span>ر.س</span>
+            </h2>
+            <p class="sub">6,333 ر.س/متر</p>
+            <ul class="d-flex extraData">
+              <li>
+                <img src="images/icons/Group 702.png">
+                مرخص
+              </li>
+              <li>تمت المشاهدة</li>
+              <li>5012</li>
+
+            </ul>
+            <ul class="d-flex">
+              <li>للبيع</li>
+              <li>مفروشه</li>
+              <li>فيلا</li>
+
+            </ul>
+            <div class="infoAdLicense">
+              <h2>معلومات ترخيص الإعلان</h2>
+              <div class="parent d-flex">
+                <div class="title">
+                  <p>رقم ترخيص الإعلان</p>
+                </div>
+                <div class="number">
+                  <img src="images/icons/license.png">
+                  <span>7100042770</span>
+                </div>
+              </div>
+            </div>
+            <div class="call d-flex">
+              <div class="whatsapp">
+                <a href="#">
+                  <img src="images/icons/whatsapp.svg" />
+                  واتساب
+                </a>
+              </div>
+              <div class="phone">
+                <a href="#">
+                  <i class="fa-solid fa-phone-volume"></i>
+                  اتصل بنا
+                </a>
+              </div>
             </div>
           </div>
         </div>
-      </nav>
-      <!--end of navbar -->
-    </header>
-    <!-- end of top-header -->
-
-    <!-- start of breadcramp-->
-    <div class="breadcramp">
-      <div class="container">
-        <ul class="d-flex">
-          <li>
-            <a href="#">الرئسية</a>
-          </li>
-          >
-
-          <li>
-            <span>فيلا 300 متر مربع واجهة شمالية،غربية</span>
-          </li>
-        </ul>
       </div>
     </div>
-    <!--end of breadcramp -->
+  </section>
+  <!-- end section of mzad-details -->
 
-    <!-- start section of mzad-details -->
-    <section class="mzad-details theAqarDetails">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8">
-            <div class="slider">
-              <div class="owl-carousel owl-theme" id="mzadPhotos">
-                <div class="box">
-                  <figure class="photo">
-                    <img src="images/building/Rectangle 835.png" />
-                  </figure>
+  <!-- start section of aqarDescription -->
+  <section class="aqarDescription">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="info">
+            <h2 class="title">مواصفات العقار</h2>
+            <ul>
+              <li class="d-flex">
+                <div class="right">
+                  <p>المساحه</p>
                 </div>
-                <div class="box">
-                  <figure class="photo">
-                    <img src="images/building/Rectangle 835.png" />
-                  </figure>
+                <div class="left">
+                  <p>
+                    <span>1000</span>
+                    متر
+                  </p>
                 </div>
-                <div class="box">
-                  <figure class="photo">
-                    <img src="images/building/Rectangle 835.png" />
-                  </figure>
+              </li>
+              <li class="d-flex">
+                <div class="right">
+                  <p>عدد الغرف</p>
                 </div>
-                <div class="box">
-                  <figure class="photo">
-                    <img src="images/building/Rectangle 835.png" />
-                  </figure>
+                <div class="left">
+                  <p>
+                    <span>3</span>
+                    غرف
+                  </p>
+                </div>
+              </li>
+              <li class="d-flex">
+                <div class="right">
+                  <p>المساحه</p>
+                </div>
+                <div class="left">
+                  <p>
+                    <span>1000</span>
+                    متر
+                  </p>
+                </div>
+              </li>
+              <li class="d-flex">
+                <div class="right">
+                  <p>عدد الغرف</p>
+                </div>
+                <div class="left">
+                  <p>
+                    <span>3</span>
+                    غرف
+                  </p>
+                </div>
+              </li>
+              <li class="d-flex">
+                <div class="right">
+                  <p>المساحه</p>
+                </div>
+                <div class="left">
+                  <p>
+                    <span>1000</span>
+                    متر
+                  </p>
+                </div>
+              </li>
+              <li class="d-flex">
+                <div class="right">
+                  <p>عدد الغرف</p>
+                </div>
+                <div class="left">
+                  <p>
+                    <span>3</span>
+                    غرف
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end section of aqarDescription -->
+
+  <!--start of featured-aqars -->
+  <section class="featured-aqars">
+    <div class="container">
+      <div class="the-title">
+        <div class="first">
+          <h2>العقارات المجاورة</h2>
+          <p>عقارات بالقرب من هذا العقار</p>
+        </div>
+        <div class="second">
+          <a href="#" class="link-style-small"><span>عرض الكل</span></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6" data-sal-duration="700" data-sal="slide-up">
+          <div class="feat">
+            <div class="photo">
+              <a href="#">
+                <img src="images/modern-living-room-style.png" />
+              </a>
+            </div>
+            <div class="info">
+              <div class="content">
+                <p class="title">
+                  <a href="#"> فيلا للبيع حي النرجس </a>
+                </p>
+                <p class="sub-title">النرجس ، شمال ، الرياض</p>
+              </div>
+              <div class="d-flex" style="padding: 5px 15px; justify-content: space-between">
+                <div class="amount">
+                  <span><img src="images/menu (3).png" />
+                    فيلا
+                  </span>
+                </div>
+
+                <div class="amount">
+                  <span><img src="images/Group 539.png" />
+                    5 يوم
+                  </span>
+                </div>
+                <div class="amount">
+                  <span>
+                    <img src="images/Group 44464.svg" />
+                    350 متر
+                  </span>
                 </div>
               </div>
             </div>
-            <ul class="d-flex features">
-              <li>
-                <img src="images/icons/true.png" />
-                <span>معتمد</span>
-              </li>
-              <li>
-                <span>تمت المشاهدة</span>
-              </li>
-            </ul>
-            <div class="description">
-              <p class="title">فيلا للبيع حي النرجس</p>
-              <p class="content">
-                النرجس ، شمال ، الرياض
-                <a href="#"
-                  >عرض علي الخريطة
-                  <i class="fa-solid fa-chevron-left"></i>
-                </a>
-              </p>
-              <p class="title">التفاصيل</p>
-              <p class="content">
-                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد
-                هذا النص من مولد النص العربى
-              </p>
+            <div class="d-flex" style="padding: 0px 15px; justify-content: space-between">
+              <div class="verify">
+                <span>مرخص</span>
+              </div>
+              <div class="verify price">
+                <p>122222 ريال</p>
+              </div>
+            </div>
+            <a href="#" class="watch-details">
+              مشاهدة تفاصيل الإعلان
+              <i class="fa-solid fa-arrow-left"></i>
+            </a>
+            <div class="featured-ad">إعلان مميز</div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-sal-duration="700" data-sal="slide-up">
+          <div class="feat">
+            <div class="photo">
+              <a href="#">
+                <img src="images/modern-living-room-style.png" />
+              </a>
+            </div>
+            <div class="info">
+              <div class="content">
+                <p class="title">
+                  <a href="#"> فيلا للبيع حي النرجس </a>
+                </p>
+                <p class="sub-title">النرجس ، شمال ، الرياض</p>
+              </div>
+              <div class="d-flex" style="padding: 5px 15px; justify-content: space-between">
+                <div class="amount">
+                  <span><img src="images/menu (3).png" />
+                    فيلا
+                  </span>
+                </div>
+
+                <div class="amount">
+                  <span><img src="images/Group 539.png" />
+                    5 يوم
+                  </span>
+                </div>
+                <div class="amount">
+                  <span>
+                    <img src="images/Group 44464.svg" />
+                    350 متر
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex" style="padding: 0px 15px; justify-content: space-between">
+              <div class="verify">
+                <span>مرخص</span>
+              </div>
+              <div class="verify price">
+                <p>122222 ريال</p>
+              </div>
+            </div>
+            <a href="#" class="watch-details">
+              مشاهدة تفاصيل الإعلان
+              <i class="fa-solid fa-arrow-left"></i>
+            </a>
+            <div class="featured-ad">إعلان مميز</div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-sal-duration="700" data-sal="slide-up">
+          <div class="feat">
+            <div class="photo">
+              <a href="#">
+                <img src="images/modern-living-room-style.png" />
+              </a>
+            </div>
+            <div class="info">
+              <div class="content">
+                <p class="title">
+                  <a href="#"> فيلا للبيع حي النرجس </a>
+                </p>
+                <p class="sub-title">النرجس ، شمال ، الرياض</p>
+              </div>
+              <div class="d-flex" style="padding: 5px 15px; justify-content: space-between">
+                <div class="amount">
+                  <span><img src="images/menu (3).png" />
+                    فيلا
+                  </span>
+                </div>
+
+                <div class="amount">
+                  <span><img src="images/Group 539.png" />
+                    5 يوم
+                  </span>
+                </div>
+                <div class="amount">
+                  <span>
+                    <img src="images/Group 44464.svg" />
+                    350 متر
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex" style="padding: 0px 15px; justify-content: space-between">
+              <div class="verify">
+                <span>مرخص</span>
+              </div>
+              <div class="verify price">
+                <p>122222 ريال</p>
+              </div>
+            </div>
+            <a href="#" class="watch-details">
+              مشاهدة تفاصيل الإعلان
+              <i class="fa-solid fa-arrow-left"></i>
+            </a>
+            <div class="featured-ad">إعلان مميز</div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-sal-duration="700" data-sal="slide-up">
+          <div class="feat">
+            <div class="photo">
+              <a href="#">
+                <img src="images/modern-living-room-style.png" />
+              </a>
+            </div>
+            <div class="info">
+              <div class="content">
+                <p class="title">
+                  <a href="#"> فيلا للبيع حي النرجس </a>
+                </p>
+                <p class="sub-title">النرجس ، شمال ، الرياض</p>
+              </div>
+              <div class="d-flex" style="padding: 5px 15px; justify-content: space-between">
+                <div class="amount">
+                  <span><img src="images/menu (3).png" />
+                    فيلا
+                  </span>
+                </div>
+
+                <div class="amount">
+                  <span><img src="images/Group 539.png" />
+                    5 يوم
+                  </span>
+                </div>
+                <div class="amount">
+                  <span>
+                    <img src="images/Group 44464.svg" />
+                    350 متر
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex" style="padding: 0px 15px; justify-content: space-between">
+              <div class="verify">
+                <span>مرخص</span>
+              </div>
+              <div class="verify price">
+                <p>122222 ريال</p>
+              </div>
+            </div>
+            <a href="#" class="watch-details">
+              مشاهدة تفاصيل الإعلان
+              <i class="fa-solid fa-arrow-left"></i>
+            </a>
+            <div class="featured-ad">إعلان مميز</div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-sal-duration="700" data-sal="slide-up">
+          <div class="feat">
+            <div class="photo">
+              <a href="#">
+                <img src="images/modern-living-room-style.png" />
+              </a>
+            </div>
+            <div class="info">
+              <div class="content">
+                <p class="title">
+                  <a href="#"> فيلا للبيع حي النرجس </a>
+                </p>
+                <p class="sub-title">النرجس ، شمال ، الرياض</p>
+              </div>
+              <div class="d-flex" style="padding: 5px 15px; justify-content: space-between">
+                <div class="amount">
+                  <span><img src="images/menu (3).png" />
+                    فيلا
+                  </span>
+                </div>
+
+                <div class="amount">
+                  <span><img src="images/Group 539.png" />
+                    5 يوم
+                  </span>
+                </div>
+                <div class="amount">
+                  <span>
+                    <img src="images/Group 44464.svg" />
+                    350 متر
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex" style="padding: 0px 15px; justify-content: space-between">
+              <div class="verify">
+                <span>مرخص</span>
+              </div>
+              <div class="verify price">
+                <p>122222 ريال</p>
+              </div>
+            </div>
+            <a href="#" class="watch-details">
+              مشاهدة تفاصيل الإعلان
+              <i class="fa-solid fa-arrow-left"></i>
+            </a>
+            <div class="featured-ad">إعلان مميز</div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-sal-duration="700" data-sal="slide-up">
+          <div class="feat">
+            <div class="photo">
+              <a href="#">
+                <img src="images/modern-living-room-style.png" />
+              </a>
+            </div>
+            <div class="info">
+              <div class="content">
+                <p class="title">
+                  <a href="#"> فيلا للبيع حي النرجس </a>
+                </p>
+                <p class="sub-title">النرجس ، شمال ، الرياض</p>
+              </div>
+              <div class="d-flex" style="padding: 5px 15px; justify-content: space-between">
+                <div class="amount">
+                  <span><img src="images/menu (3).png" />
+                    فيلا
+                  </span>
+                </div>
+
+                <div class="amount">
+                  <span><img src="images/Group 539.png" />
+                    5 يوم
+                  </span>
+                </div>
+                <div class="amount">
+                  <span>
+                    <img src="images/Group 44464.svg" />
+                    350 متر
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex" style="padding: 0px 15px; justify-content: space-between">
+              <div class="verify">
+                <span>مرخص</span>
+              </div>
+              <div class="verify price">
+                <p>122222 ريال</p>
+              </div>
+            </div>
+            <a href="#" class="watch-details">
+              مشاهدة تفاصيل الإعلان
+              <i class="fa-solid fa-arrow-left"></i>
+            </a>
+            <div class="featured-ad">إعلان مميز</div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-sal-duration="700" data-sal="slide-up">
+          <div class="feat">
+            <div class="photo">
+              <a href="#">
+                <img src="images/modern-living-room-style.png" />
+              </a>
+            </div>
+            <div class="info">
+              <div class="content">
+                <p class="title">
+                  <a href="#"> فيلا للبيع حي النرجس </a>
+                </p>
+                <p class="sub-title">النرجس ، شمال ، الرياض</p>
+              </div>
+              <div class="d-flex" style="padding: 5px 15px; justify-content: space-between">
+                <div class="amount">
+                  <span><img src="images/menu (3).png" />
+                    فيلا
+                  </span>
+                </div>
+
+                <div class="amount">
+                  <span><img src="images/Group 539.png" />
+                    5 يوم
+                  </span>
+                </div>
+                <div class="amount">
+                  <span>
+                    <img src="images/Group 44464.svg" />
+                    350 متر
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex" style="padding: 0px 15px; justify-content: space-between">
+              <div class="verify">
+                <span>مرخص</span>
+              </div>
+              <div class="verify price">
+                <p>122222 ريال</p>
+              </div>
+            </div>
+            <a href="#" class="watch-details">
+              مشاهدة تفاصيل الإعلان
+              <i class="fa-solid fa-arrow-left"></i>
+            </a>
+            <div class="featured-ad">إعلان مميز</div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-sal-duration="700" data-sal="slide-up">
+          <div class="feat">
+            <div class="photo">
+              <a href="#">
+                <img src="images/modern-living-room-style.png" />
+              </a>
+            </div>
+            <div class="info">
+              <div class="content">
+                <p class="title">
+                  <a href="#"> فيلا للبيع حي النرجس </a>
+                </p>
+                <p class="sub-title">النرجس ، شمال ، الرياض</p>
+              </div>
+              <div class="d-flex" style="padding: 5px 15px; justify-content: space-between">
+                <div class="amount">
+                  <span><img src="images/menu (3).png" />
+                    فيلا
+                  </span>
+                </div>
+
+                <div class="amount">
+                  <span><img src="images/Group 539.png" />
+                    5 يوم
+                  </span>
+                </div>
+                <div class="amount">
+                  <span>
+                    <img src="images/Group 44464.svg" />
+                    350 متر
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex" style="padding: 0px 15px; justify-content: space-between">
+              <div class="verify">
+                <span>مرخص</span>
+              </div>
+              <div class="verify price">
+                <p>122222 ريال</p>
+              </div>
+            </div>
+            <a href="#" class="watch-details">
+              مشاهدة تفاصيل الإعلان
+              <i class="fa-solid fa-arrow-left"></i>
+            </a>
+            <div class="featured-ad">إعلان مميز</div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-sal-duration="700" data-sal="slide-up">
+          <div class="feat">
+            <div class="photo">
+              <a href="#">
+                <img src="images/modern-living-room-style.png" />
+              </a>
+            </div>
+            <div class="info">
+              <div class="content">
+                <p class="title">
+                  <a href="#"> فيلا للبيع حي النرجس </a>
+                </p>
+                <p class="sub-title">النرجس ، شمال ، الرياض</p>
+              </div>
+              <div class="d-flex" style="padding: 5px 15px; justify-content: space-between">
+                <div class="amount">
+                  <span><img src="images/menu (3).png" />
+                    فيلا
+                  </span>
+                </div>
+
+                <div class="amount">
+                  <span><img src="images/Group 539.png" />
+                    5 يوم
+                  </span>
+                </div>
+                <div class="amount">
+                  <span>
+                    <img src="images/Group 44464.svg" />
+                    350 متر
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex" style="padding: 0px 15px; justify-content: space-between">
+              <div class="verify">
+                <span>مرخص</span>
+              </div>
+              <div class="verify price">
+                <p>122222 ريال</p>
+              </div>
+            </div>
+            <a href="#" class="watch-details">
+              مشاهدة تفاصيل الإعلان
+              <i class="fa-solid fa-arrow-left"></i>
+            </a>
+            <div class="featured-ad">إعلان مميز</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--end of featured-aqars -->
+  <!--start of footer -->
+  <footer>
+    <!--start of top-footer -->
+    <div class="top-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="log-footer">
+              <div class="logo">
+                <img src="images/logo-footer.png" />
+              </div>
+              <div class="headquater">
+                <img src="images/rega-optimized.png" />
+                <p>مرخصة من الهيئة العامة للعقار</p>
+              </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <ul class="d-flex actions">
-              <li>
-                <button>
-                  <i class="fa-regular fa-heart"></i>
-                  المفضلة
-                </button>
-              </li>
-              <li>
-                <button>
-                  <i class="fa-solid fa-share"></i>
-                  مشاركة
-                </button>
-              </li>
-              <li>
-                <button>
-                  <i class="fa-solid fa-ellipsis-vertical"></i>
-                  إبلاع عن العقار
-                </button>
-              </li>
-            </ul>
-            <div class="mzadPeriod aqarperiod">
-              <h2 class="price">
-                1,900,000
-                <span>ر.س</span>
-              </h2>
-              <p class="sub">6,333 ر.س/متر</p>
-              <ul class="d-flex">
-                <li>للبيع</li>
-                <li>50000</li>
-                <li>فيلا</li>
-                <li>مفروشه</li>
+          <div class="col-md-3">
+            <div class="links">
+              <h2>روابط سريعة</h2>
+              <ul>
+                <li><a href="#">عقارات للبيع</a></li>
+                <li><a href="#">عقارات للإيجار</a></li>
+                <li><a href="#">الشركات العقارية</a></li>
+                <li><a href="#">المسوقين العقارين</a></li>
+                <li><a href="#">الباقات والإشتراكات</a></li>
               </ul>
-              <div class="words">
-                <h2>تسويق وإدارة العقار من قبل الوسيط</h2>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="links">
+              <h2>روابط مهمة</h2>
+              <ul>
+                <li><a href="#">من نحن</a></li>
+                <li><a href="#">الشكاوي والمقترحات</a></li>
+                <li><a href="#">سياسة الخصوصية</a></li>
+                <li><a href="#">حقوق الملكية</a></li>
+                <li><a href="#">الشروط والأحكام</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="social">
+              <h2>تابعنا علي</h2>
+              <ul class="d-flex">
+                <li>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+              <div class="number">
+                <h3>الرقم الموحد</h3>
                 <p>
-                  الرقم المرجعي 356757 | خر تحديث: منذ 0 يوم
-                  <br />
-                  رقم المعلن بالهيئة العامة للعقار : 5272507
+                  <a href="tel:9200412547">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <span>9200412547</span>
+                  </a>
                 </p>
               </div>
-              <div class="call d-flex">
-                <div class="whatsapp">
-                  <a href="#">
-                    <img src="images/icons/whatsapp.svg" />
-                    واتساب
-                  </a>
-                </div>
-                <div class="phone">
-                  <a href="#">
-                    <i class="fa-solid fa-phone-volume"></i>
-                    اتصل بنا
-                  </a>
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- end section of mzad-details -->
+    </div>
+    <!-- end of top-footer -->
+    <!--start of bottom-footer -->
+    <div class="bottom-footer">
+      <h2>جميع الحقوق محفوظة لعقارتكم @2022</h2>
+    </div>
+  </footer>
+  <!-- end of bottom-footer -->
+  <!-- end of footer -->
+  <!--framework js -->
+  <!--framework js -->
+  <script src="js/jquery.js "></script>
+  <script src="js/bootstrap.bundle.min.js "></script>
+  <script src="js/all.min.js "></script>
+  <script src="js/owl.carousel.min.js "></script>
+  <script src="js/sal.js"></script>
+  <!-- Select2 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+  <script src="js/main.js "></script>
+</body>
 
-    <!-- start section of aqarDescription -->
-    <section class="aqarDescription">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="info">
-              <h2 class="title">مواصفات العقار</h2>
-              <ul>
-                <li class="d-flex">
-                  <div class="right">
-                    <p>المساحه</p>
-                  </div>
-                  <div class="left">
-                    <p>
-                      <span>1000</span>
-                      متر
-                    </p>
-                  </div>
-                </li>
-                <li class="d-flex">
-                  <div class="right">
-                    <p>عدد الغرف</p>
-                  </div>
-                  <div class="left">
-                    <p>
-                      <span>3</span>
-                      غرف
-                    </p>
-                  </div>
-                </li>
-                <li class="d-flex">
-                  <div class="right">
-                    <p>المساحه</p>
-                  </div>
-                  <div class="left">
-                    <p>
-                      <span>1000</span>
-                      متر
-                    </p>
-                  </div>
-                </li>
-                <li class="d-flex">
-                  <div class="right">
-                    <p>عدد الغرف</p>
-                  </div>
-                  <div class="left">
-                    <p>
-                      <span>3</span>
-                      غرف
-                    </p>
-                  </div>
-                </li>
-                <li class="d-flex">
-                  <div class="right">
-                    <p>المساحه</p>
-                  </div>
-                  <div class="left">
-                    <p>
-                      <span>1000</span>
-                      متر
-                    </p>
-                  </div>
-                </li>
-                <li class="d-flex">
-                  <div class="right">
-                    <p>عدد الغرف</p>
-                  </div>
-                  <div class="left">
-                    <p>
-                      <span>3</span>
-                      غرف
-                    </p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- end section of aqarDescription -->
-
-    <!--start of featured-aqars -->
-    <section class="featured-aqars">
-      <div class="container">
-        <div class="the-title">
-          <div class="first">
-            <h2>العقارات المجاورة</h2>
-            <p>عقارات بالقرب من هذا العقار</p>
-          </div>
-          <div class="second">
-            <a href="#" class="link-style-small"><span>عرض الكل</span></a>
-          </div>
-        </div>
-        <div class="row">
-          <div
-            class="col-lg-4 col-md-6"
-            data-sal-duration="700"
-            data-sal="slide-up"
-          >
-            <div class="feat">
-              <div class="photo">
-                <a href="#">
-                  <img src="images/modern-living-room-style.png" />
-                </a>
-              </div>
-              <div class="info">
-                <div class="content">
-                  <p class="title">
-                    <a href="#"> فيلا للبيع حي النرجس </a>
-                  </p>
-                  <p class="sub-title">النرجس ، شمال ، الرياض</p>
-                </div>
-                <div
-                  class="d-flex"
-                  style="padding: 5px 15px; justify-content: space-between"
-                >
-                  <div class="amount">
-                    <span
-                      ><img src="images/menu (3).png" />
-                      فيلا
-                    </span>
-                  </div>
-
-                  <div class="amount">
-                    <span
-                      ><img src="images/Group 539.png" />
-                      5 يوم
-                    </span>
-                  </div>
-                  <div class="amount">
-                    <span>
-                      <img src="images/Group 44464.svg" />
-                      350 متر
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="d-flex"
-                style="padding: 0px 15px; justify-content: space-between"
-              >
-                <div class="verify">
-                  <span>مرخص</span>
-                </div>
-                <div class="verify price">
-                  <p>122222 ريال</p>
-                </div>
-              </div>
-              <a href="#" class="watch-details">
-                مشاهدة تفاصيل الإعلان
-                <i class="fa-solid fa-arrow-left"></i>
-              </a>
-              <div class="featured-ad">إعلان مميز</div>
-            </div>
-          </div>
-          <div
-            class="col-lg-4 col-md-6"
-            data-sal-duration="700"
-            data-sal="slide-up"
-          >
-            <div class="feat">
-              <div class="photo">
-                <a href="#">
-                  <img src="images/modern-living-room-style.png" />
-                </a>
-              </div>
-              <div class="info">
-                <div class="content">
-                  <p class="title">
-                    <a href="#"> فيلا للبيع حي النرجس </a>
-                  </p>
-                  <p class="sub-title">النرجس ، شمال ، الرياض</p>
-                </div>
-                <div
-                  class="d-flex"
-                  style="padding: 5px 15px; justify-content: space-between"
-                >
-                  <div class="amount">
-                    <span
-                      ><img src="images/menu (3).png" />
-                      فيلا
-                    </span>
-                  </div>
-
-                  <div class="amount">
-                    <span
-                      ><img src="images/Group 539.png" />
-                      5 يوم
-                    </span>
-                  </div>
-                  <div class="amount">
-                    <span>
-                      <img src="images/Group 44464.svg" />
-                      350 متر
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="d-flex"
-                style="padding: 0px 15px; justify-content: space-between"
-              >
-                <div class="verify">
-                  <span>مرخص</span>
-                </div>
-                <div class="verify price">
-                  <p>122222 ريال</p>
-                </div>
-              </div>
-              <a href="#" class="watch-details">
-                مشاهدة تفاصيل الإعلان
-                <i class="fa-solid fa-arrow-left"></i>
-              </a>
-              <div class="featured-ad">إعلان مميز</div>
-            </div>
-          </div>
-          <div
-            class="col-lg-4 col-md-6"
-            data-sal-duration="700"
-            data-sal="slide-up"
-          >
-            <div class="feat">
-              <div class="photo">
-                <a href="#">
-                  <img src="images/modern-living-room-style.png" />
-                </a>
-              </div>
-              <div class="info">
-                <div class="content">
-                  <p class="title">
-                    <a href="#"> فيلا للبيع حي النرجس </a>
-                  </p>
-                  <p class="sub-title">النرجس ، شمال ، الرياض</p>
-                </div>
-                <div
-                  class="d-flex"
-                  style="padding: 5px 15px; justify-content: space-between"
-                >
-                  <div class="amount">
-                    <span
-                      ><img src="images/menu (3).png" />
-                      فيلا
-                    </span>
-                  </div>
-
-                  <div class="amount">
-                    <span
-                      ><img src="images/Group 539.png" />
-                      5 يوم
-                    </span>
-                  </div>
-                  <div class="amount">
-                    <span>
-                      <img src="images/Group 44464.svg" />
-                      350 متر
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="d-flex"
-                style="padding: 0px 15px; justify-content: space-between"
-              >
-                <div class="verify">
-                  <span>مرخص</span>
-                </div>
-                <div class="verify price">
-                  <p>122222 ريال</p>
-                </div>
-              </div>
-              <a href="#" class="watch-details">
-                مشاهدة تفاصيل الإعلان
-                <i class="fa-solid fa-arrow-left"></i>
-              </a>
-              <div class="featured-ad">إعلان مميز</div>
-            </div>
-          </div>
-          <div
-            class="col-lg-4 col-md-6"
-            data-sal-duration="700"
-            data-sal="slide-up"
-          >
-            <div class="feat">
-              <div class="photo">
-                <a href="#">
-                  <img src="images/modern-living-room-style.png" />
-                </a>
-              </div>
-              <div class="info">
-                <div class="content">
-                  <p class="title">
-                    <a href="#"> فيلا للبيع حي النرجس </a>
-                  </p>
-                  <p class="sub-title">النرجس ، شمال ، الرياض</p>
-                </div>
-                <div
-                  class="d-flex"
-                  style="padding: 5px 15px; justify-content: space-between"
-                >
-                  <div class="amount">
-                    <span
-                      ><img src="images/menu (3).png" />
-                      فيلا
-                    </span>
-                  </div>
-
-                  <div class="amount">
-                    <span
-                      ><img src="images/Group 539.png" />
-                      5 يوم
-                    </span>
-                  </div>
-                  <div class="amount">
-                    <span>
-                      <img src="images/Group 44464.svg" />
-                      350 متر
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="d-flex"
-                style="padding: 0px 15px; justify-content: space-between"
-              >
-                <div class="verify">
-                  <span>مرخص</span>
-                </div>
-                <div class="verify price">
-                  <p>122222 ريال</p>
-                </div>
-              </div>
-              <a href="#" class="watch-details">
-                مشاهدة تفاصيل الإعلان
-                <i class="fa-solid fa-arrow-left"></i>
-              </a>
-              <div class="featured-ad">إعلان مميز</div>
-            </div>
-          </div>
-          <div
-            class="col-lg-4 col-md-6"
-            data-sal-duration="700"
-            data-sal="slide-up"
-          >
-            <div class="feat">
-              <div class="photo">
-                <a href="#">
-                  <img src="images/modern-living-room-style.png" />
-                </a>
-              </div>
-              <div class="info">
-                <div class="content">
-                  <p class="title">
-                    <a href="#"> فيلا للبيع حي النرجس </a>
-                  </p>
-                  <p class="sub-title">النرجس ، شمال ، الرياض</p>
-                </div>
-                <div
-                  class="d-flex"
-                  style="padding: 5px 15px; justify-content: space-between"
-                >
-                  <div class="amount">
-                    <span
-                      ><img src="images/menu (3).png" />
-                      فيلا
-                    </span>
-                  </div>
-
-                  <div class="amount">
-                    <span
-                      ><img src="images/Group 539.png" />
-                      5 يوم
-                    </span>
-                  </div>
-                  <div class="amount">
-                    <span>
-                      <img src="images/Group 44464.svg" />
-                      350 متر
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="d-flex"
-                style="padding: 0px 15px; justify-content: space-between"
-              >
-                <div class="verify">
-                  <span>مرخص</span>
-                </div>
-                <div class="verify price">
-                  <p>122222 ريال</p>
-                </div>
-              </div>
-              <a href="#" class="watch-details">
-                مشاهدة تفاصيل الإعلان
-                <i class="fa-solid fa-arrow-left"></i>
-              </a>
-              <div class="featured-ad">إعلان مميز</div>
-            </div>
-          </div>
-          <div
-            class="col-lg-4 col-md-6"
-            data-sal-duration="700"
-            data-sal="slide-up"
-          >
-            <div class="feat">
-              <div class="photo">
-                <a href="#">
-                  <img src="images/modern-living-room-style.png" />
-                </a>
-              </div>
-              <div class="info">
-                <div class="content">
-                  <p class="title">
-                    <a href="#"> فيلا للبيع حي النرجس </a>
-                  </p>
-                  <p class="sub-title">النرجس ، شمال ، الرياض</p>
-                </div>
-                <div
-                  class="d-flex"
-                  style="padding: 5px 15px; justify-content: space-between"
-                >
-                  <div class="amount">
-                    <span
-                      ><img src="images/menu (3).png" />
-                      فيلا
-                    </span>
-                  </div>
-
-                  <div class="amount">
-                    <span
-                      ><img src="images/Group 539.png" />
-                      5 يوم
-                    </span>
-                  </div>
-                  <div class="amount">
-                    <span>
-                      <img src="images/Group 44464.svg" />
-                      350 متر
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="d-flex"
-                style="padding: 0px 15px; justify-content: space-between"
-              >
-                <div class="verify">
-                  <span>مرخص</span>
-                </div>
-                <div class="verify price">
-                  <p>122222 ريال</p>
-                </div>
-              </div>
-              <a href="#" class="watch-details">
-                مشاهدة تفاصيل الإعلان
-                <i class="fa-solid fa-arrow-left"></i>
-              </a>
-              <div class="featured-ad">إعلان مميز</div>
-            </div>
-          </div>
-          <div
-            class="col-lg-4 col-md-6"
-            data-sal-duration="700"
-            data-sal="slide-up"
-          >
-            <div class="feat">
-              <div class="photo">
-                <a href="#">
-                  <img src="images/modern-living-room-style.png" />
-                </a>
-              </div>
-              <div class="info">
-                <div class="content">
-                  <p class="title">
-                    <a href="#"> فيلا للبيع حي النرجس </a>
-                  </p>
-                  <p class="sub-title">النرجس ، شمال ، الرياض</p>
-                </div>
-                <div
-                  class="d-flex"
-                  style="padding: 5px 15px; justify-content: space-between"
-                >
-                  <div class="amount">
-                    <span
-                      ><img src="images/menu (3).png" />
-                      فيلا
-                    </span>
-                  </div>
-
-                  <div class="amount">
-                    <span
-                      ><img src="images/Group 539.png" />
-                      5 يوم
-                    </span>
-                  </div>
-                  <div class="amount">
-                    <span>
-                      <img src="images/Group 44464.svg" />
-                      350 متر
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="d-flex"
-                style="padding: 0px 15px; justify-content: space-between"
-              >
-                <div class="verify">
-                  <span>مرخص</span>
-                </div>
-                <div class="verify price">
-                  <p>122222 ريال</p>
-                </div>
-              </div>
-              <a href="#" class="watch-details">
-                مشاهدة تفاصيل الإعلان
-                <i class="fa-solid fa-arrow-left"></i>
-              </a>
-              <div class="featured-ad">إعلان مميز</div>
-            </div>
-          </div>
-          <div
-            class="col-lg-4 col-md-6"
-            data-sal-duration="700"
-            data-sal="slide-up"
-          >
-            <div class="feat">
-              <div class="photo">
-                <a href="#">
-                  <img src="images/modern-living-room-style.png" />
-                </a>
-              </div>
-              <div class="info">
-                <div class="content">
-                  <p class="title">
-                    <a href="#"> فيلا للبيع حي النرجس </a>
-                  </p>
-                  <p class="sub-title">النرجس ، شمال ، الرياض</p>
-                </div>
-                <div
-                  class="d-flex"
-                  style="padding: 5px 15px; justify-content: space-between"
-                >
-                  <div class="amount">
-                    <span
-                      ><img src="images/menu (3).png" />
-                      فيلا
-                    </span>
-                  </div>
-
-                  <div class="amount">
-                    <span
-                      ><img src="images/Group 539.png" />
-                      5 يوم
-                    </span>
-                  </div>
-                  <div class="amount">
-                    <span>
-                      <img src="images/Group 44464.svg" />
-                      350 متر
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="d-flex"
-                style="padding: 0px 15px; justify-content: space-between"
-              >
-                <div class="verify">
-                  <span>مرخص</span>
-                </div>
-                <div class="verify price">
-                  <p>122222 ريال</p>
-                </div>
-              </div>
-              <a href="#" class="watch-details">
-                مشاهدة تفاصيل الإعلان
-                <i class="fa-solid fa-arrow-left"></i>
-              </a>
-              <div class="featured-ad">إعلان مميز</div>
-            </div>
-          </div>
-          <div
-            class="col-lg-4 col-md-6"
-            data-sal-duration="700"
-            data-sal="slide-up"
-          >
-            <div class="feat">
-              <div class="photo">
-                <a href="#">
-                  <img src="images/modern-living-room-style.png" />
-                </a>
-              </div>
-              <div class="info">
-                <div class="content">
-                  <p class="title">
-                    <a href="#"> فيلا للبيع حي النرجس </a>
-                  </p>
-                  <p class="sub-title">النرجس ، شمال ، الرياض</p>
-                </div>
-                <div
-                  class="d-flex"
-                  style="padding: 5px 15px; justify-content: space-between"
-                >
-                  <div class="amount">
-                    <span
-                      ><img src="images/menu (3).png" />
-                      فيلا
-                    </span>
-                  </div>
-
-                  <div class="amount">
-                    <span
-                      ><img src="images/Group 539.png" />
-                      5 يوم
-                    </span>
-                  </div>
-                  <div class="amount">
-                    <span>
-                      <img src="images/Group 44464.svg" />
-                      350 متر
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="d-flex"
-                style="padding: 0px 15px; justify-content: space-between"
-              >
-                <div class="verify">
-                  <span>مرخص</span>
-                </div>
-                <div class="verify price">
-                  <p>122222 ريال</p>
-                </div>
-              </div>
-              <a href="#" class="watch-details">
-                مشاهدة تفاصيل الإعلان
-                <i class="fa-solid fa-arrow-left"></i>
-              </a>
-              <div class="featured-ad">إعلان مميز</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--end of featured-aqars -->
-    <!--start of footer -->
-    <footer>
-      <!--start of top-footer -->
-      <div class="top-footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3">
-              <div class="log-footer">
-                <div class="logo">
-                  <img src="images/logo-footer.png" />
-                </div>
-                <div class="headquater">
-                  <img src="images/rega-optimized.png" />
-                  <p>مرخصة من الهيئة العامة للعقار</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="links">
-                <h2>روابط سريعة</h2>
-                <ul>
-                  <li><a href="#">عقارات للبيع</a></li>
-                  <li><a href="#">عقارات للإيجار</a></li>
-                  <li><a href="#">الشركات العقارية</a></li>
-                  <li><a href="#">المسوقين العقارين</a></li>
-                  <li><a href="#">الباقات والإشتراكات</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="links">
-                <h2>روابط مهمة</h2>
-                <ul>
-                  <li><a href="#">من نحن</a></li>
-                  <li><a href="#">الشكاوي والمقترحات</a></li>
-                  <li><a href="#">سياسة الخصوصية</a></li>
-                  <li><a href="#">حقوق الملكية</a></li>
-                  <li><a href="#">الشروط والأحكام</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="social">
-                <h2>تابعنا علي</h2>
-                <ul class="d-flex">
-                  <li>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                  </li>
-                </ul>
-                <div class="number">
-                  <h3>الرقم الموحد</h3>
-                  <p>
-                    <a href="tel:9200412547">
-                      <i class="fa-solid fa-phone-volume"></i>
-                      <span>9200412547</span>
-                    </a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end of top-footer -->
-      <!--start of bottom-footer -->
-      <div class="bottom-footer">
-        <h2>جميع الحقوق محفوظة لعقارتكم @2022</h2>
-      </div>
-    </footer>
-    <!-- end of bottom-footer -->
-    <!-- end of footer -->
-    <!--framework js -->
-    <!--framework js -->
-    <script src="js/jquery.js "></script>
-    <script src="js/bootstrap.bundle.min.js "></script>
-    <script src="js/all.min.js "></script>
-    <script src="js/owl.carousel.min.js "></script>
-    <script src="js/sal.js"></script>
-    <!-- Select2 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
-    <script src="js/main.js "></script>
-  </body>
 </html>

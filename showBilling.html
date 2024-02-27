@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/sal.css">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
-    <title>myProfile</title>
+    <title>showBilling</title>
 </head>
 
 
@@ -133,7 +133,10 @@
             </li>
             >
             <li>
-                <span>إعلاناتي</span>
+                <a href="#">المعاملات المالية</a>
+            </li>
+            <li>
+                <span>عرض الإيصال</span>
             </li>
         </ul>
     </div>
@@ -203,7 +206,7 @@
                     </div>
                     <ul class="nav nav-pills" id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="pills-ads-tab" data-bs-toggle="pill"
+                            <button class="nav-link" id="pills-ads-tab" data-bs-toggle="pill"
                                 data-bs-target="#pills-ads" type="button" role="tab" aria-controls="pills-ads"
                                 aria-selected="true">
                                 <img src="images/icons/Group 1074.png">
@@ -252,7 +255,7 @@
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="pills-fininceTransaction-tab" data-bs-toggle="pill"
+                            <button class="nav-link active" id="pills-fininceTransaction-tab" data-bs-toggle="pill"
                                 data-bs-target="#pills-fininceTransactiontab" type="button" role="tab"
                                 aria-controls="pills-fininceTransactiontab" aria-selected="false">
                                 <img src="images/icons/Group 44610.svg">
@@ -299,8 +302,7 @@
             </div>
             <div class="col-lg-8">
                 <div class="tab-content" id="pills-tabContent">
-                    <div class="tab-pane fade show active" id="pills-ads" role="tabpanel"
-                        aria-labelledby="pills-ads-tab">
+                    <div class="tab-pane fade" id="pills-ads" role="tabpanel" aria-labelledby="pills-ads-tab">
 
                         <div class="addAdsData">
                             <ul class="nav nav-pills" id="pills-tab" role="tablist">
@@ -3362,420 +3364,137 @@
                         </div>
                     </div>
 
-                    <div class="tab-pane fade" id="pills-fininceTransactiontab" role="tabpanel"
+                    <div class="tab-pane fade show active" id="pills-fininceTransactiontab" role="tabpanel"
                         aria-labelledby="pills-fininceTransactiontab">
 
                         <div class="addAdsData">
-                            <ul class="nav nav-pills transactionLists" id="pills-tab" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill"
-                                        data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all"
-                                        aria-selected="true">
-                                        الكل
-                                    </button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-accepting-tab" data-bs-toggle="pill"
-                                        data-bs-target="#pills-accepting" type="button" role="tab"
-                                        aria-controls="pills-accepting" aria-selected="false">
-                                        المقبوله
-                                    </button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-refused-tab" data-bs-toggle="pill"
-                                        data-bs-target="#pills-refused" type="button" role="tab"
-                                        aria-controls="pills-refused" aria-selected="false">
-                                        المرفوضه
-                                    </button>
-                                </li>
 
-                            </ul>
-                            <div class="tab-content" id="pills-tabContent">
-                                <div class="tab-pane fade show active" id="pills-all" role="tabpanel"
-                                    aria-labelledby="pills-all-tab">
-                                    <div class="Financial-transactions">
-                                        <div class="parent d-flex">
-                                            <div class="titleTransaction">
-                                                <h2>رسوم الإشتراك في الباقة الفضية</h2>
-                                            </div>
-                                            <div class="type">
-                                                <p>
-                                                    عملية ناجحة
-
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="parent d-flex">
-                                            <div class="titleTransaction">
-                                                <h2>المبلغ الإجمالي</h2>
-                                            </div>
-                                            <div class="type">
-                                                <p class="price">
-                                                    59 ر.س
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="parent d-flex">
-                                            <div class="titleTransaction">
-                                                <h2>22/01/2024</h2>
-                                            </div>
-                                            <div class="type">
-                                                <a href="showBilling.html">عرض الإيصال</a>
-                                            </div>
-                                        </div>
+                            <div class="Financial-transactions">
+                                <div class="parent d-flex">
+                                    <div class="titleTransaction">
+                                        <h2>الخدمة</h2>
                                     </div>
-                                    <div class="Financial-transactions">
-                                        <div class="parent d-flex">
-                                            <div class="titleTransaction">
-                                                <h2>رسوم الإشتراك في الباقة الفضية</h2>
-                                            </div>
-                                            <div class="type refused">
-                                                <p>
-                                                    عمليه مرفوضه
-
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="parent d-flex">
-                                            <div class="titleTransaction">
-                                                <h2>المبلغ الإجمالي</h2>
-                                            </div>
-                                            <div class="type">
-                                                <p class="price">
-                                                    59 ر.س
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="parent d-flex">
-                                            <div class="titleTransaction">
-                                                <h2>22/01/2024</h2>
-                                            </div>
-                                            <div class="type">
-                                                <a href="showBilling.html">عرض الإيصال</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="Financial-transactions">
-                                        <div class="parent d-flex">
-                                            <div class="titleTransaction">
-                                                <h2>رسوم الإشتراك في الباقة الفضية</h2>
-                                            </div>
-                                            <div class="type">
-                                                <p>
-                                                    عملية ناجحة
-
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="parent d-flex">
-                                            <div class="titleTransaction">
-                                                <h2>المبلغ الإجمالي</h2>
-                                            </div>
-                                            <div class="type">
-                                                <p class="price">
-                                                    59 ر.س
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="parent d-flex">
-                                            <div class="titleTransaction">
-                                                <h2>22/01/2024</h2>
-                                            </div>
-                                            <div class="type">
-                                                <a href="showBilling.html">عرض الإيصال</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="Financial-transactions">
-                                        <div class="parent d-flex">
-                                            <div class="titleTransaction">
-                                                <h2>رسوم الإشتراك في الباقة الفضية</h2>
-                                            </div>
-                                            <div class="type refused">
-                                                <p>
-                                                    عمليه مرفوضه
-
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="parent d-flex">
-                                            <div class="titleTransaction">
-                                                <h2>المبلغ الإجمالي</h2>
-                                            </div>
-                                            <div class="type">
-                                                <p class="price">
-                                                    59 ر.س
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="parent d-flex">
-                                            <div class="titleTransaction">
-                                                <h2>22/01/2024</h2>
-                                            </div>
-                                            <div class="type">
-                                                <a href="showBilling.html">عرض الإيصال</a>
-                                            </div>
-                                        </div>
+                                    <div class="titleTransaction">
+                                        <h2>رسوم الإشتراك في الباقة الفضية</h2>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade" id="pills-accepting" role="tabpanel"
-                                    aria-labelledby="pills-accepting-tab">
-                                    <div class="Financial-transactions">
-                                        <div class="parent d-flex">
-                                            <div class="titleTransaction">
-                                                <h2>رسوم الإشتراك في الباقة الفضية</h2>
-                                            </div>
-                                            <div class="type">
-                                                <p>
-                                                    عملية ناجحة
-
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="parent d-flex">
-                                            <div class="titleTransaction">
-                                                <h2>المبلغ الإجمالي</h2>
-                                            </div>
-                                            <div class="type">
-                                                <p class="price">
-                                                    59 ر.س
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="parent d-flex">
-                                            <div class="titleTransaction">
-                                                <h2>22/01/2024</h2>
-                                            </div>
-                                            <div class="type">
-                                                <a href="showBilling.html">عرض الإيصال</a>
-                                            </div>
-                                        </div>
+                                <div class="parent d-flex">
+                                    <div class="titleTransaction">
+                                        <h2>التاريخ</h2>
                                     </div>
-                                    <div class="Financial-transactions">
-                                        <div class="parent d-flex">
-                                            <div class="titleTransaction">
-                                                <h2>رسوم الإشتراك في الباقة الفضية</h2>
-                                            </div>
-                                            <div class="type refused">
-                                                <p>
-                                                    عمليه مرفوضه
-
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="parent d-flex">
-                                            <div class="titleTransaction">
-                                                <h2>المبلغ الإجمالي</h2>
-                                            </div>
-                                            <div class="type">
-                                                <p class="price">
-                                                    59 ر.س
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="parent d-flex">
-                                            <div class="titleTransaction">
-                                                <h2>22/01/2024</h2>
-                                            </div>
-                                            <div class="type">
-                                                <a href="showBilling.html">عرض الإيصال</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="Financial-transactions">
-                                        <div class="parent d-flex">
-                                            <div class="titleTransaction">
-                                                <h2>رسوم الإشتراك في الباقة الفضية</h2>
-                                            </div>
-                                            <div class="type">
-                                                <p>
-                                                    عملية ناجحة
-
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="parent d-flex">
-                                            <div class="titleTransaction">
-                                                <h2>المبلغ الإجمالي</h2>
-                                            </div>
-                                            <div class="type">
-                                                <p class="price">
-                                                    59 ر.س
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="parent d-flex">
-                                            <div class="titleTransaction">
-                                                <h2>22/01/2024</h2>
-                                            </div>
-                                            <div class="type">
-                                                <a href="showBilling.html">عرض الإيصال</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="Financial-transactions">
-                                        <div class="parent d-flex">
-                                            <div class="titleTransaction">
-                                                <h2>رسوم الإشتراك في الباقة الفضية</h2>
-                                            </div>
-                                            <div class="type refused">
-                                                <p>
-                                                    عمليه مرفوضه
-
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="parent d-flex">
-                                            <div class="titleTransaction">
-                                                <h2>المبلغ الإجمالي</h2>
-                                            </div>
-                                            <div class="type">
-                                                <p class="price">
-                                                    59 ر.س
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="parent d-flex">
-                                            <div class="titleTransaction">
-                                                <h2>22/01/2024</h2>
-                                            </div>
-                                            <div class="type">
-                                                <a href="showBilling.html">عرض الإيصال</a>
-                                            </div>
-                                        </div>
+                                    <div class="titleTransaction">
+                                        <h2>12/01/2024</h2>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade" id="pills-refused" role="tabpanel"
-                                    aria-labelledby="pills-refused-tab">
-                                    <div class="Financial-transactions">
-                                        <div class="parent d-flex">
-                                            <div class="titleTransaction">
-                                                <h2>رسوم الإشتراك في الباقة الفضية</h2>
-                                            </div>
-                                            <div class="type">
-                                                <p>
-                                                    عملية ناجحة
-
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="parent d-flex">
-                                            <div class="titleTransaction">
-                                                <h2>المبلغ الإجمالي</h2>
-                                            </div>
-                                            <div class="type">
-                                                <p class="price">
-                                                    59 ر.س
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="parent d-flex">
-                                            <div class="titleTransaction">
-                                                <h2>22/01/2024</h2>
-                                            </div>
-                                            <div class="type">
-                                                <a href="showBilling.html">عرض الإيصال</a>
-                                            </div>
-                                        </div>
+                                <div class="parent d-flex">
+                                    <div class="titleTransaction">
+                                        <h2>الوقت</h2>
                                     </div>
-                                    <div class="Financial-transactions">
-                                        <div class="parent d-flex">
-                                            <div class="titleTransaction">
-                                                <h2>رسوم الإشتراك في الباقة الفضية</h2>
-                                            </div>
-                                            <div class="type refused">
-                                                <p>
-                                                    عمليه مرفوضه
-
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="parent d-flex">
-                                            <div class="titleTransaction">
-                                                <h2>المبلغ الإجمالي</h2>
-                                            </div>
-                                            <div class="type">
-                                                <p class="price">
-                                                    59 ر.س
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="parent d-flex">
-                                            <div class="titleTransaction">
-                                                <h2>22/01/2024</h2>
-                                            </div>
-                                            <div class="type">
-                                                <a href="showBilling.html">عرض الإيصال</a>
-                                            </div>
-                                        </div>
+                                    <div class="titleTransaction">
+                                        <h2>5:00 م</h2>
                                     </div>
-                                    <div class="Financial-transactions">
-                                        <div class="parent d-flex">
-                                            <div class="titleTransaction">
-                                                <h2>رسوم الإشتراك في الباقة الفضية</h2>
-                                            </div>
-                                            <div class="type">
-                                                <p>
-                                                    عملية ناجحة
-
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="parent d-flex">
-                                            <div class="titleTransaction">
-                                                <h2>المبلغ الإجمالي</h2>
-                                            </div>
-                                            <div class="type">
-                                                <p class="price">
-                                                    59 ر.س
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="parent d-flex">
-                                            <div class="titleTransaction">
-                                                <h2>22/01/2024</h2>
-                                            </div>
-                                            <div class="type">
-                                                <a href="showBilling.html">عرض الإيصال</a>
-                                            </div>
-                                        </div>
+                                </div>
+                                <div class="parent d-flex">
+                                    <div class="titleTransaction">
+                                        <h2>رقم الفاتورة</h2>
                                     </div>
-                                    <div class="Financial-transactions">
-                                        <div class="parent d-flex">
-                                            <div class="titleTransaction">
-                                                <h2>رسوم الإشتراك في الباقة الفضية</h2>
-                                            </div>
-                                            <div class="type refused">
-                                                <p>
-                                                    عمليه مرفوضه
+                                    <div class="titleTransaction">
+                                        <h2>152321455</h2>
+                                    </div>
+                                </div>
+                                <div class="parent d-flex">
+                                    <div class="titleTransaction">
+                                        <h2>رقم العملية</h2>
+                                    </div>
+                                    <div class="titleTransaction">
+                                        <h2>1236542555</h2>
+                                    </div>
+                                </div>
 
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="parent d-flex">
-                                            <div class="titleTransaction">
-                                                <h2>المبلغ الإجمالي</h2>
-                                            </div>
-                                            <div class="type">
-                                                <p class="price">
-                                                    59 ر.س
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="parent d-flex">
-                                            <div class="titleTransaction">
-                                                <h2>22/01/2024</h2>
-                                            </div>
-                                            <div class="type">
-                                                <a href="showBilling.html">عرض الإيصال</a>
-                                            </div>
-                                        </div>
+                            </div>
+                            <div class="Financial-transactions">
+                                <div class="parent d-flex">
+                                    <div class="titleTransaction">
+                                        <h2>الحالة</h2>
+                                    </div>
+                                    <div class="type">
+                                        <p>
+                                            عملية ناجحة
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="parent d-flex">
+                                    <div class="titleTransaction">
+                                        <h2>مدفوع بواسطة</h2>
+                                    </div>
+                                    <div class="titleTransaction">
+                                        <span>stc pay</span>
+                                        <img src="images/Group 1456.png">
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="Financial-transactions">
+                                <div class="parent d-flex">
+                                    <div class="titleTransaction">
+                                        <h2>المجموع</h2>
+                                    </div>
+                                    <div class="titleTransaction">
+                                        <h2>
+                                            59 ر.س
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div class="parent d-flex">
+                                    <div class="titleTransaction">
+                                        <h2>الخصم</h2>
+                                    </div>
+                                    <div class="titleTransaction discount">
+                                        <h2>
+                                            -10 ر.س
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div class="parent d-flex">
+                                    <div class="titleTransaction">
+                                        <h2>ضريبة القيمة المضافة</h2>
+                                    </div>
+                                    <div class="titleTransaction">
+                                        <h2>
+                                            12 ر.س
+                                        </h2>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                            <div class="Financial-transactions">
+                                <div class="parent d-flex">
+                                    <div class="titleTransaction">
+                                        <h2>الإجمالي</h2>
+                                    </div>
+                                    <div class="titleTransaction">
+                                        <h2>
+                                            59 ر.س
+                                        </h2>
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="download-billing d-flex">
+                                <div class="titleTransaction">
+                                    <a href="/path/to/download">تحميل الفاتورة</a>
+                                </div>
+                                <div class="titleTransaction">
+                                    <a href="/path/to/print" target="_blank">طباعة الفاتورة</a>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
-
                     <div class="tab-pane fade" id="pills-update" role="tabpanel" aria-labelledby="pills-update-tab">
                         <div class="editPersonalData register">
                             <h2>تعديل بيانات الملف الشخصي</h2>
