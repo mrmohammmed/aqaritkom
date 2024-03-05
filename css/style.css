@@ -5741,3 +5741,8 @@ input[type="file"] {
 .theAqarDetails .aqarperiod .infoAdLicense .parent {
   justify-content: space-between;
 }
+
+.myProfile .addAdsData .Financial-transactions .parent .revision p {
+  background-color: rgba(255, 136, 27, .09);
+  color: var(--secondary-color);
+}
